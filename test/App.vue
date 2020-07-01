@@ -1,18 +1,20 @@
+
+<!--
+ * @Date: 2020-07-01 11:32:59
+ * @LastEditors: chenzhanghui
+ * @LastEditTime: 2020-07-01 15:39:54
+--> 
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ypl-button />
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
