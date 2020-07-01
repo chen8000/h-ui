@@ -1,0 +1,121 @@
+
+// 多种主题色
+// 颜色参考图：https://at-ui.github.io/at-ui/#/zh/guide/color
+$themes: (
+  theme1: (
+    // ---------------------------  主色
+    /**
+     * @name: BrandColor
+     * @msg: 主色
+     */
+     primary: #6190E8,
+     primary-hover: #79a1eb,
+
+
+    // ---------------------------  辅助色【用于标识状态的按钮等】
+    /**
+    * @name: success
+    * @msg: 成功
+    */    
+    success: #13CE66,
+
+    /**
+    * @name: danger
+    * @msg: 危险
+    */    
+    danger: #FF4949,
+
+    /**
+    * @name: warning
+    * @msg: 警告
+    */    
+    warning: #FFC82C,
+
+    /**
+    * @name: info
+    * @msg: 信息
+    */    
+    info: #78A4FA,
+
+    /**
+    * @name: default
+    * @msg: 默认
+    */    
+    default: #fff,
+    default-hover: #f3f7fa,
+
+
+    // ---------------------------  次辅助色【用于不那么重要的信息等】
+    /**
+    * @name: roof
+    * @msg: 次色级别 1
+    */    
+    roof: #C2ABC7,
+
+    /**
+    * @name: curtain
+    * @msg: 次色级别 2
+    */    
+    curtain: #F0D0D5,
+
+    /**
+    * @name: door
+    * @msg: 次色级别 3
+    */ 
+    door: #F1E4ED,
+
+    /**
+    * @name: wall
+    * @msg: 次色级别 4
+    */ 
+    wall: #EEF0F0,
+
+    // --------------------------- 中性色【用于文本、背景和边框】
+    /**
+    * @name: header
+    * @msg: 标题
+    */    
+    header: #2C405A,
+
+    /**
+    * @name: textBlack
+    * @msg: 正文 - 黑
+    */    
+    text: #3F536E,
+
+    /**
+    * @name: textGrey
+    * @msg: 正文 - 灰
+    */    
+    textGrey: #8DABC4,
+
+    /**
+    * @name: iconColor
+    * @msg: 图表
+    */    
+    iconColor: #A8C6DF,
+
+    /**
+    * @name: border
+    * @msg: 边框
+    */    
+    border: #C5D9E8,
+
+    /**
+    * @name: bgBlue
+    * @msg: 背景色 - 浅蓝
+    */    
+    bgBlue: #ECF5FD,
+
+    /**
+    * @name: bgWhite
+    * @msg: 背景色 - 米白
+    */    
+    bgWhite: #FAFBFC,
+
+  ),
+
+  theme2: (
+    
+  )
+);

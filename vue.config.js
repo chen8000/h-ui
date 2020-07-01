@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:42:19
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 15:38:02
+ * @LastEditTime: 2020-07-01 17:03:36
  */ 
 module.exports = {
   pages: {
@@ -17,7 +17,7 @@ module.exports = {
   //   config.module
   //     .rule('js')
   //     .include
-  //       .add('/ypl-ui')
+  //       .add('/packages')
   //       .end()
   //     .use('babel')
   //       .loader('babel-loader')

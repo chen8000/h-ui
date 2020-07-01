@@ -2,9 +2,9 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:45:46
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 15:45:37
+ * @LastEditTime: 2020-07-01 18:50:32
  */ 
-import HButton from './Button'
+import HButton from './components/Button'
 
 // 组件列表
 const components = [

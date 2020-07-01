@@ -2,19 +2,17 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 15:39:54
+ * @LastEditTime: 2020-07-01 18:59:34
 --> 
 
 <template>
-  <div id="app">
-    <h-button />
+  <div id="app" class="theme1">
+    <h-button type="default">hello HUI</h-button>
   </div>
 </template>
 <script>
-
-
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 

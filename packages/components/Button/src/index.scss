@@ -1,0 +1,21 @@
+.h--button {
+  
+  padding: $mediumBtn;
+  display: inline-block;
+  font-size: $fontSizeDefault;
+  cursor: pointer;
+  outline: 0;
+}
+
+.h--button--default {
+  @include theme($themes) {
+    border: 1px solid themed('border');
+    color: themed('textBlack');
+    background: themed('default');
+  }
+  &:hover {
+    @include theme($themes) {
+      background: themed('default-hover');
+    }
+  }
+}
