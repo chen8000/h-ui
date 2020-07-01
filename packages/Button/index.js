@@ -2,12 +2,12 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:30
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 15:21:14
+ * @LastEditTime: 2020-07-01 15:45:25
  */ 
-import YplButton from './src'
+import HButton from './src'
 
-YplButton.install = function (Vue) {
-  Vue.component(YplButton.name, YplButton)
+HButton.install = function (Vue) {
+  Vue.component(HButton.name, HButton)
 }
 
-export default YplButton
+export default HButton

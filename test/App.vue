@@ -7,7 +7,7 @@
 
 <template>
   <div id="app">
-    <ypl-button />
+    <h-button />
   </div>
 </template>
 <script>

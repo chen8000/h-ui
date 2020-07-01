@@ -2,7 +2,7 @@
 /*
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 15:39:31
+ * @LastEditTime: 2020-07-01 15:46:11
  */ 
 import Vue from 'vue'
 import App from './App.vue'
@@ -14,12 +14,12 @@ import App from './App.vue'
 
 /**
  * 导入组件库
- * import yplUi from '../packages'
- * Vue.use(yplUi)
+ * import HUI from '../packages'
+ * Vue.use(HUI)
  */
-import YplUI from '../packages'
+import HUI from '../packages'
 
-Vue.use(YplUI)
+Vue.use(HUI)
 
 
 

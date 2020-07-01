@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    name: 'ypl-button'
+    name: 'h-button'
   }
 </script>
 
