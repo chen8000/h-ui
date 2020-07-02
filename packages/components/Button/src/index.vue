@@ -2,10 +2,10 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 17:51:25
+ * @LastEditTime: 2020-07-02 18:01:32
 --> 
 <template>
-  <button @click="handleDis" :disabled="disabled" ref="hButton" :class="[
+  <button :disabled="disabled" ref="hButton" :class="[
     'h--button', 
     `${type ? `h--button--${type}` : ''}`,
     `${hollow ? `h--button--${type}--hollow` : ''}`,
@@ -27,6 +27,7 @@
   export default {
     name: 'h-button',
     props: {
+      // 类型
       type: {
         type: String,
         default: 'default'
@@ -71,9 +72,6 @@
                   ripplesColor.theme1['default'] : 
                   ripplesColor.theme1[this.type]
         })
-      },
-      handleDis () {
-        console.log(111)
       }
     }
   }

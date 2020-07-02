@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 10:40:26
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 16:21:44
+ * @LastEditTime: 2020-07-02 17:57:34
  */ 
 
  /**
@@ -15,9 +15,9 @@
      * @name: primary
      * @msg: 主题色水波纹颜色
      */
-    primary: 'rgba(0,0,0,.5)',
-    default: 'rgba(255,255,255, .6)',
-    success: 'rgba(145,174,228, .6)',
+    primary: 'rgba(0,0,0,.3)',
+    default: 'rgba(0,0,0,.3)',
+    success: 'rgba(0,0,0,.3)',
   },
   theme2: {
 

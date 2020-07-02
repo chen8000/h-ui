@@ -14,7 +14,11 @@
   }
 }
 
-// 空心
+/**
+ * @name: h--button-hollow
+ * @msg: 空心按钮
+ * @param {type} String
+ */
 @mixin h--button-hollow($type) {
   @include theme($themes) {
     color: themed($type);

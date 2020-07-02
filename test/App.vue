@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 17:50:04
+ * @LastEditTime: 2020-07-02 17:56:20
 --> 
 
 <template>
@@ -39,7 +39,7 @@
       <h-button type="text" icon="iconfont iconbianji3">文字按钮</h-button>
     </div>
     <div class="row1">
-      <h4>大小 medium / small / mini</h4>
+      <h4>大小</h4>
       <p>medium</p>
       <h-button type="primary" medium>主色按钮</h-button>
       <h-button type="success" medium>成功按钮</h-button>
