@@ -1,5 +1,8 @@
+
+/**
+ * @msg: 默认样式
+ */
 .h--button {
-  
   padding: $mediumBtn;
   display: inline-block;
   font-size: $fontSizeDefault;
@@ -7,6 +10,9 @@
   outline: 0;
 }
 
+/**
+ * @msg: 默认button
+ */
 .h--button--default {
   @include theme($themes) {
     border: 1px solid themed('border');
@@ -16,6 +22,23 @@
   &:hover {
     @include theme($themes) {
       background: themed('default-hover');
+    }
+  }
+}
+
+/**
+ * @msg: 主色button
+ */
+.h--button--primary {
+  @include theme($themes) {
+    border: 1px solid themed('primary');
+    color: themed('textBlack');
+    background: themed('primary');
+  }
+  &:hover {
+    @include theme($themes) {
+      border: 1px solid themed('primary-hover');
+      background: themed('primary-hover');
     }
   }
 }

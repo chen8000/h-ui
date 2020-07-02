@@ -2,11 +2,12 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 18:59:34
+ * @LastEditTime: 2020-07-02 10:52:45
 --> 
 
 <template>
   <div id="app" class="theme1">
+    <h-button type="primary">hello HUI</h-button>
     <h-button type="default">hello HUI</h-button>
   </div>
 </template>

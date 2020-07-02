@@ -2,11 +2,11 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-01 19:03:22
+ * @LastEditTime: 2020-07-02 15:18:40
 --> 
 <template>
-  <button :class="[
-    'h--button h--ripple', 
+  <button ref="hButton" :class="[
+    'h--button', 
     `${type ? `h--button--${type}` : ''}`
   ]">
     <span>
@@ -16,19 +16,37 @@
 </template>
 
 <script>
-import { ripple } from '../../../plugin/ripple'
+  import { ripples } from '@/modules'
+  import { ripplesColor } from '@/config/ripple.config'
   export default {
     name: 'h-button',
     props: {
-      type: String,
+      type: {
+        type: String,
+        default: 'default'
+      },
     },
     mounted(){
-      ripple('h--button--default', '#2f5398')
+      this.$nextTick(() => {
+        // console.log(ripplesColor.theme1[this.type])
+        ripples({
+          object: this.$refs.hButton, 
+          color: ripplesColor.theme1[this.type]
+        })
+      })
+    },
+    methods: {
+      handleRipples(){
+        // console.log(event.toElement.parentElement)
+      }
     }
   }
 </script>
 
+<style lang="scss">
+  @import '@/config/theme/common';
+</style>
 <style lang="scss" scoped>
-  @import '../../../theme';
+  @import '@/config/theme';
   @import './index.scss';
 </style>

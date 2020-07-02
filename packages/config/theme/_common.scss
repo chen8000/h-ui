@@ -1,0 +1,14 @@
+
+.h--ripples--parent {
+  position: relative; 
+  overflow: hidden;
+}
+.h--ripples {
+  position: absolute; 
+  display: block; 
+  width: 1px;
+  height: 1px;
+  transform: scale(0);
+  border-radius: 50%;
+  opacity: 1;
+}
