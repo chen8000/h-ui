@@ -3,7 +3,7 @@
  * @msg: 默认样式
  */
 .h--button {
-  padding: $mediumBtn;
+  padding: $buttonDefaultPadding;
   display: inline-block;
   font-size: $fontSizeDefault;
   cursor: pointer;
@@ -12,7 +12,32 @@
   @include theme($themes) {
     color: themed('textBlack');
   }
+  .h--button--icon {
+    float: left;
+    margin-top: 2px;
+    margin-right: 3px;
+  }
 }
+
+// `${medium ? 'h--button--medium' : ''}`,
+//     `${small ? 'h--button--small' : ''}`,
+//     `${min ? 'h--button--min' : ''}`
+/**
+ * @name: medium / small / min
+ * @msg: 按钮大小
+ */
+ .h--button--medium {
+    font-size: $mediumBtnSize;
+    padding: $mediumBtn;
+ }
+ .h--button--small {
+    font-size: $smallBtnSize;
+    padding: $smallBtn;
+ }
+ .h--button--mini {
+    font-size: $miniBtnSize;
+    padding: $miniBtn;
+ }
 
 /**
  * @name: default
@@ -35,6 +60,7 @@
   @include theme($themes) {
     background: none;
     &:hover {
+      color: themed('textGrey');
       background: none;
     }
   }

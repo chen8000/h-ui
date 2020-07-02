@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 17:08:49
+ * @LastEditTime: 2020-07-02 17:50:04
 --> 
 
 <template>
@@ -33,10 +33,39 @@
       <h-button type="text" disabled>文字按钮</h-button>
     </div>
     <div class="row1">
-      <h4>左侧icon</h4>
-      <h-button type="success">主色按钮</h-button>
-      <h-button hollow>默认按钮</h-button>
-      <h-button type="text">文字按钮</h-button>
+      <h4>icon</h4>
+      <h-button type="success" icon="iconfont iconyiliaohangyedeICON-">主色按钮</h-button>
+      <h-button icon="iconfont iconshangchuan">默认按钮</h-button>
+      <h-button type="text" icon="iconfont iconbianji3">文字按钮</h-button>
+    </div>
+    <div class="row1">
+      <h4>大小 medium / small / mini</h4>
+      <p>medium</p>
+      <h-button type="primary" medium>主色按钮</h-button>
+      <h-button type="success" medium>成功按钮</h-button>
+      <h-button type="danger" medium>危险按钮</h-button>
+      <h-button type="warning" medium>警告按钮</h-button>
+      <h-button type="info" medium>信息按钮</h-button>
+      <h-button medium>默认按钮</h-button>
+      <h-button type="text" medium>文字按钮</h-button>
+
+      <p>small</p>
+      <h-button type="primary" small>主色按钮</h-button>
+      <h-button type="success" small>成功按钮</h-button>
+      <h-button type="danger" small>危险按钮</h-button>
+      <h-button type="warning" small>警告按钮</h-button>
+      <h-button type="info" small>信息按钮</h-button>
+      <h-button small>默认按钮</h-button>
+      <h-button type="text" small>文字按钮</h-button>
+
+      <p>mini</p>
+      <h-button type="primary" mini>主色按钮</h-button>
+      <h-button type="success" mini>成功按钮</h-button>
+      <h-button type="danger" mini>危险按钮</h-button>
+      <h-button type="warning" mini>警告按钮</h-button>
+      <h-button type="info" mini>信息按钮</h-button>
+      <h-button mini>默认按钮</h-button>
+      <h-button type="text" mini>文字按钮</h-button>
     </div>
   </div>
 </template>

@@ -1,18 +1,24 @@
 
 // ----------------- button   medium / small / mini / round
 /**
+ * @name: buttonDefaultPadding
+ * @msg: 默认
+ */
+ $buttonDefaultPadding: 7px 14px;
+/**
  * @name: mediumBtn
  * @msg: 大尺寸按钮
  */
-
- $mediumBtn: 8px 16px;
+ $mediumBtn: 7px 14px;
+ $mediumBtnSize: 14px;
 
  /**
  * @name: smallBtn
  * @msg: 大尺寸按钮
  */
 
- $smallBtn: 5px 10px;
+ $smallBtn: 6px 12px;
+ $smallBtnSize: 13px;
 
  /**
  * @name: miniBtn
@@ -20,6 +26,7 @@
  */
 
  $miniBtn: 5px 10px;
+ $miniBtnSize: 13px;
 
 
 

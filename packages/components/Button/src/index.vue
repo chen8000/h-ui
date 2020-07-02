@@ -2,16 +2,20 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 16:58:47
+ * @LastEditTime: 2020-07-02 17:51:25
 --> 
 <template>
   <button @click="handleDis" :disabled="disabled" ref="hButton" :class="[
     'h--button', 
     `${type ? `h--button--${type}` : ''}`,
     `${hollow ? `h--button--${type}--hollow` : ''}`,
-    `${disabled ? `h--button--disabled` : ''}`
+    `${disabled ? `h--button--disabled` : ''}`,
+    `${medium ? 'h--button--medium' : ''}`,
+    `${small ? 'h--button--small' : ''}`,
+    `${mini ? 'h--button--mini' : ''}`
   ]">
     <span>
+      <i v-if="!!icon" :class="['h--button--icon', icon]"></i>
       <slot></slot>
     </span>
   </button>
@@ -34,6 +38,23 @@
       },
       // 禁用
       disabled: {
+        type: Boolean,
+        default: false
+      },
+      // icon
+      icon: {
+        type: String
+      },
+      // 大小 medium / small / mini
+      medium: {
+        type: Boolean,
+        default: false
+      },
+      small: {
+        type: Boolean,
+        default: false
+      },
+      mini: {
         type: Boolean,
         default: false
       }
