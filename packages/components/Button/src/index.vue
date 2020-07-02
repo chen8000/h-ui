@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 18:01:32
+ * @LastEditTime: 2020-07-02 19:04:12
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-  import { ripples } from '@/modules'
+  import { ripples, getThemeName } from '@/modules'
   import { ripplesColor } from '@/config/ripple.config'
   export default {
     name: 'h-button',
@@ -63,14 +63,19 @@
     mounted(){
       this.$nextTick(this.handleRipples)
     },
+    computed: {
+      themeName(){
+        return getThemeName()
+      }
+    },
     methods: {
       handleRipples () {
         // 涟漪效果
         this.type !== 'text' && ripples({
           object: this.$refs.hButton, 
-          color: !ripplesColor.theme1[this.type] ? 
-                  ripplesColor.theme1['default'] : 
-                  ripplesColor.theme1[this.type]
+          color: !ripplesColor[this.themeName][this.type] ? 
+                  ripplesColor[this.themeName]['default'] : 
+                  ripplesColor[this.themeName][this.type]
         })
       }
     }

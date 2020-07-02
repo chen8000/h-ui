@@ -2,11 +2,11 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 17:56:20
+ * @LastEditTime: 2020-07-02 19:01:01
 --> 
 
 <template>
-  <div id="app" class="theme1">
+  <div id="app" :class="theme" :theme="theme">
     <div class="row1">
       <h4>实心：</h4>
       <h-button type="primary">主色按钮</h-button>
@@ -72,6 +72,11 @@
 <script>
 export default {
   name: 'App',
+  data(){
+    return {
+      theme: 'theme1', // 主题名称
+    }
+  }
 }
 </script>
 
