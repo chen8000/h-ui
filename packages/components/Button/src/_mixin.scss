@@ -1,0 +1,28 @@
+/**
+ * @name: h--button
+ * @msg: 实心按钮公共样式
+ * @param {type} String
+ */
+ @mixin h--button($type) {
+  @include theme($themes) {
+    border: 1px solid themed($type);
+    background: themed($type);
+    &:hover {
+      border: 1px solid themed($type+'-hover');
+      background: themed($type+'-hover');
+    }
+  }
+}
+
+// 空心
+@mixin h--button-hollow($type) {
+  @include theme($themes) {
+    color: themed($type);
+    background: none;
+    &:hover {
+      background: none;
+      border-color: themed($type+'-hover');
+      color: themed($type+'-hover');
+    }
+  }
+}

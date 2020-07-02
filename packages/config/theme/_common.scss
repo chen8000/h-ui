@@ -1,14 +1,20 @@
 
+// 涟漪样式
 .h--ripples--parent {
   position: relative; 
   overflow: hidden;
-}
-.h--ripples {
-  position: absolute; 
-  display: block; 
-  width: 1px;
-  height: 1px;
-  transform: scale(0);
-  border-radius: 50%;
-  opacity: 1;
+  * {
+    position: relative;
+    z-index: 1;
+  }
+  .h--ripples {
+    position: absolute; 
+    display: block; 
+    width: 1px;
+    height: 1px;
+    transform: scale(0);
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 0;
+  }
 }

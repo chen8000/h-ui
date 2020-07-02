@@ -8,37 +8,134 @@
   font-size: $fontSizeDefault;
   cursor: pointer;
   outline: 0;
+  border-radius: 5px;
+  @include theme($themes) {
+    color: themed('textBlack');
+  }
 }
 
 /**
- * @msg: 默认button
+ * @name: default
+ * @msg: 默认
  */
 .h--button--default {
   @include theme($themes) {
     border: 1px solid themed('border');
-    color: themed('textBlack');
     background: themed('default');
-  }
-  &:hover {
-    @include theme($themes) {
+    &:hover {
       background: themed('default-hover');
     }
   }
 }
-
 /**
- * @msg: 主色button
+ * @name: default
+ * @msg: 默认空心
  */
-.h--button--primary {
+.h--button--default--hollow {
   @include theme($themes) {
-    border: 1px solid themed('primary');
-    color: themed('textBlack');
-    background: themed('primary');
-  }
-  &:hover {
-    @include theme($themes) {
-      border: 1px solid themed('primary-hover');
-      background: themed('primary-hover');
+    background: none;
+    &:hover {
+      background: none;
     }
   }
 }
+/**
+ * @name: text
+ * @msg: 文字
+ */
+ .h--button--text {
+  border: 0;
+  outline: 0;
+  background: none !important;
+  @include theme($themes) {
+    color: themed('textButton');
+  }
+  &:hover {
+    @include theme($themes) {
+      color: themed('textButton-hover');
+    }
+  }
+ }
+
+ /**
+  * @name: disabled
+  * @msg: 禁用
+  */
+ .h--button--disabled:disabled, 
+ .h--button--disabled:disabled:active, 
+ .h--button--disabled:disabled:hover {
+  @include theme($themes) {
+    color: themed('textBlack');
+    cursor: not-allowed;
+    border-color: #ececec;
+    background-color: #f7f7f7;
+    &:hover {
+      color: themed('textBlack');
+    }
+  }
+}
+
+
+/**
+ * @name: primary
+ * @msg: 主色
+ * hollow 空心
+ */
+.h--button--primary {
+  @include h--button('primary')
+}
+.h--button--primary--hollow {
+  @include h--button-hollow('primary')
+}
+
+/**
+ * @name: success
+ * @msg: 成功
+ * hollow 空心
+ */
+ .h--button--success {
+  @include h--button('success')
+}
+.h--button--success--hollow {
+  @include h--button-hollow('success')
+}
+
+/**
+ * @name: danger
+ * @msg: 危险
+ * hollow 空心
+ */
+ .h--button--danger {
+  @include h--button('danger')
+}
+.h--button--danger--hollow {
+  @include h--button-hollow('danger')
+}
+
+/**
+ * @name: warning
+ * @msg: 警告
+ * hollow 空心
+ */
+ .h--button--warning {
+  @include h--button('warning')
+}
+.h--button--warning--hollow {
+  @include h--button-hollow('warning')
+}
+
+/**
+ * @name: info
+ * @msg: 信息
+ * hollow 空心
+ */
+ .h--button--info {
+  @include h--button('info')
+}
+.h--button--info--hollow {
+  @include h--button-hollow('info')
+}
+
+
+
+

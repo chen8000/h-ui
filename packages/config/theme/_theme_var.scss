@@ -18,24 +18,28 @@ $themes: (
     * @msg: 成功
     */    
     success: #13CE66,
+    success-hover: #8dd1aa,
 
     /**
     * @name: danger
     * @msg: 危险
     */    
     danger: #FF4949,
+    danger-hover: #fc8484,
 
     /**
     * @name: warning
     * @msg: 警告
     */    
     warning: #FFC82C,
+    warning-hover: #ffdb76,
 
     /**
     * @name: info
     * @msg: 信息
     */    
-    info: #78A4FA,
+    info: #909399,
+    info-hover: #a6a9ad,
 
     /**
     * @name: default
@@ -44,6 +48,12 @@ $themes: (
     default: #fff,
     default-hover: #f3f7fa,
 
+    /**
+    * @name: text
+    * @msg: 文字按钮
+    */    
+    textButton: #3f536e,
+    textButton-hover: #6190E8,
 
     // ---------------------------  次辅助色【用于不那么重要的信息等】
     /**
@@ -81,7 +91,7 @@ $themes: (
     * @name: textBlack
     * @msg: 正文 - 黑
     */    
-    text: #3F536E,
+    textBlack: #35373a,
 
     /**
     * @name: textGrey
