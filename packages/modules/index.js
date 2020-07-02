@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 15:26:00
+ * @LastEditTime: 2020-07-02 18:14:29
  */ 
 import { getCoordinate, addClass } from '@/tools'
 /**
@@ -24,7 +24,7 @@ export const ripples = ({object, color}) => {
     span.style.left = `${pageX}px`
     span.style.top = `${pageY}px`
     span.style.background = color
-    span.style.transition = `all .5s linear`
+    span.style.transition = `all .3s linear`
     span.style.transform = `scale(${scalMultiple + scalMultiple})`
     setTimeout(() => {
       addClass(span, 'h--isRemove')
