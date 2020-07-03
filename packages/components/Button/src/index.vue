@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 19:04:12
+ * @LastEditTime: 2020-07-03 11:55:19
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -83,7 +83,7 @@
 </script>
 
 <style lang="scss">
-  @import '@/config/theme/common';
+  @import '@/config/theme/_common';
 </style>
 <style lang="scss" scoped>
   @import '@/config/theme';
