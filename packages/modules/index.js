@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 14:10:20
+ * @LastEditTime: 2020-07-03 16:38:45
  */ 
 import { getCoordinate, addClass } from '@/tools'
 /**
@@ -43,14 +43,4 @@ export const ripples = ({object, color}) => {
       },1000)
     // }, 100)
   }, !1)
-}
-
-/**
- * @name: getThemeName
- * @msg: 获取主题name
- * @param {type} 
- * @return: 
- */
-export const getThemeName = () => {
-  return document.getElementById('app').getAttribute('theme')
 }
