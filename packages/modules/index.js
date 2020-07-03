@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 12:12:02
+ * @LastEditTime: 2020-07-03 14:10:20
  */ 
 import { getCoordinate, addClass } from '@/tools'
 /**
@@ -11,26 +11,37 @@ import { getCoordinate, addClass } from '@/tools'
  */
 export const ripples = ({object, color}) => {
   object.addEventListener('mousedown', function(event) {
-    addClass(this, 'h--ripples--parent')
-    let span = document.createElement('span')
-    span.className = 'h--ripples'
-    this.appendChild(span)
-    // 坐标点
-    let { pageX, pageY } = getCoordinate({ event, target: this })
-    // span 的宽高
-    let w = this.offsetWidth + 20
-    let h = this.offsetHeight + 20
-    let scalMultiple = w > h ? w : h
-    span.style.left = `${pageX}px`
-    span.style.top = `${pageY}px`
-    span.style.background = color
-    span.style.transition = `all .4s linear`
-    span.style.transform = `scale(${scalMultiple})`
-    span.style.opacity = 0
+    // let interval = null
+    // let count = 0
+    // interval = setInterval(() => {
+    //   count ++
+    //   count === 1 && clearInterval(interval)
+      addClass(this, 'h--ripples--parent')
+      let span = document.createElement('span')
+      addClass(span, 'h--ripples')
+      this.appendChild(span)
+      // 坐标点
+      let { pageX, pageY } = getCoordinate({ event, target: this })
+      // span 的宽高
 
-    setTimeout(() => {
-      this.removeChild(span)
-    },400)
+      let w = this.offsetWidth
+      let h = this.offsetHeight
+      let inaccWH = w > h ? w : h
+      let inaccXY = pageX > pageY ? pageX : pageY
+      let radius = inaccWH - inaccXY
+      let scalMultiple = radius > inaccXY ? radius : inaccXY
+      
+      span.style.left = `${pageX}px`
+      span.style.top = `${pageY}px`
+      span.style.background = color
+      span.style.transition = `all 1s linear`
+      span.style.transform = `scale(${scalMultiple * 2})`
+      span.style.opacity = 0
+
+      setTimeout(() => {
+        this.removeChild(span)
+      },1000)
+    // }, 100)
   }, !1)
 }
 

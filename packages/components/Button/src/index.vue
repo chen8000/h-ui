@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 11:55:19
+ * @LastEditTime: 2020-07-03 12:15:37
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -12,7 +12,8 @@
     `${disabled ? `h--button--disabled` : ''}`,
     `${medium ? 'h--button--medium' : ''}`,
     `${small ? 'h--button--small' : ''}`,
-    `${mini ? 'h--button--mini' : ''}`
+    `${mini ? 'h--button--mini' : ''}`,
+    `${long ? 'h--button--long' : ''}`
   ]">
     <span>
       <i v-if="!!icon" :class="['h--button--icon', icon]"></i>
@@ -56,6 +57,11 @@
         default: false
       },
       mini: {
+        type: Boolean,
+        default: false
+      },
+      // 长按钮
+      long: {
         type: Boolean,
         default: false
       }

@@ -55,6 +55,13 @@ $themes: (
     textButton: #3f536e,
     textButton-hover: #6190E8,
 
+    /**
+    * @name: disabled
+    * @msg: 禁用状态颜色
+    */    
+    disabled: #f7f7f7,
+    disabled-border: #ececec,
+
     // ---------------------------  次辅助色【用于不那么重要的信息等】
     /**
     * @name: roof

@@ -90,13 +90,21 @@
   @include theme($themes) {
     color: themed('textBlack');
     cursor: not-allowed;
-    border-color: #ececec;
-    background-color: #f7f7f7;
+    border-color: themed('disabled-border');
+    background-color: themed('disabled');
     &:hover {
       color: themed('textBlack');
     }
   }
 }
+
+/**
+ * @name: long
+ * @msg: 宽度充满父元素
+ */
+ .h--button--long {
+   width: 100%;
+ }
 
 
 /**
