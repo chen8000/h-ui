@@ -2,12 +2,12 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 16:53:25
+ * @LastEditTime: 2020-07-03 17:14:41
 --> 
 
 <template>
   <div id="app" :class="theme" :theme="theme">
-    <div class="row1">
+    <!-- <div class="row1">
       <h4>实心：</h4>
       <h-button type="primary">主色按钮</h-button>
       <h-button type="success">成功按钮</h-button>
@@ -70,7 +70,7 @@
     <div class="row1">
       <p>宽度撑满父元素</p>
       <h-button type="primary" long>主色按钮</h-button>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

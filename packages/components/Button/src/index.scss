@@ -101,7 +101,7 @@
  * hollow 空心
  */
 .h--button--primary {
-  @include h--button($c-primary, $c-primary-hover)
+  @include h--button($c-primary, $c-primary-hover, $c-primary-text-color)
 }
 .h--button--primary--hollow {
   @include h--button-hollow($c-primary, $c-primary-hover)
@@ -113,7 +113,7 @@
  * hollow 空心
  */
  .h--button--success {
-  @include h--button($c-success, $c-success-hover)
+  @include h--button($c-success, $c-success-hover, $c-success-text-color)
 }
 .h--button--success--hollow {
   @include h--button-hollow($c-success, $c-success-hover)
@@ -125,7 +125,7 @@
  * hollow 空心
  */
  .h--button--danger {
-  @include h--button($c-danger, $c-danger-hover)
+  @include h--button($c-danger, $c-danger-hover, $c-danger-text-color)
 }
 .h--button--danger--hollow {
   @include h--button-hollow($c-danger, $c-danger-hover)
@@ -137,7 +137,7 @@
  * hollow 空心
  */
  .h--button--warning {
-  @include h--button($c-warning, $c-warning-hover)
+  @include h--button($c-warning, $c-warning-hover, $c-warning-text-color)
 }
 .h--button--warning--hollow {
   @include h--button-hollow($c-warning, $c-warning-hover)
@@ -149,7 +149,7 @@
  * hollow 空心
  */
  .h--button--info {
-  @include h--button($c-info, $c-info-hover)
+  @include h--button($c-info, $c-info-hover, $c-info-text-color)
 }
 .h--button--info--hollow {
   @include h--button-hollow($c-info, $c-info-hover)

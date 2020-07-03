@@ -6,8 +6,9 @@
      * @name: BrandColor
      * @msg: 主色
      */
-     $c-primary: #6190E8;
-     $c-primary-hover: #79a1eb;
+     $c-primary: #6354D3;
+     $c-primary-hover: #7b6fd8;
+     $c-primary-text-color: #fff;
 
 
     // ---------------------------  辅助色【用于标识状态的按钮等】
@@ -17,6 +18,7 @@
     */    
     $c-success: #13CE66;
     $c-success-hover: #8dd1aa;
+    $c-success-text-color: #fff;
 
     /**
     * @name: danger
@@ -24,6 +26,7 @@
     */    
     $c-danger: #FF4949;
     $c-danger-hover: #fc8484;
+    $c-danger-text-color: #fff;
 
     /**
     * @name: warning
@@ -31,6 +34,7 @@
     */    
     $c-warning: #FFC82C;
     $c-warning-hover: #ffdb76;
+    $c-warning-text-color: #fff;
 
     /**
     * @name: info
@@ -38,6 +42,7 @@
     */    
     $c-info: #909399;
     $c-info-hover: #a6a9ad;
+    $c-info-text-color: #fff;
 
     /**
     * @name: default

@@ -3,9 +3,10 @@
  * @msg: 实心按钮公共样式
  * @param {type} String
  */
- @mixin h--button($type, $hover) {
+ @mixin h--button($type, $hover, $textColor) {
   border: 1px solid $type;
   background: $type;
+  color: $textColor;
   &:hover {
     border: 1px solid $hover;
     background: $hover;
