@@ -3,14 +3,12 @@
  * @msg: 实心按钮公共样式
  * @param {type} String
  */
- @mixin h--button($type) {
-  @include theme($themes) {
-    border: 1px solid themed($type);
-    background: themed($type);
-    &:hover {
-      border: 1px solid themed($type+'-hover');
-      background: themed($type+'-hover');
-    }
+ @mixin h--button($type, $hover) {
+  border: 1px solid $type;
+  background: $type;
+  &:hover {
+    border: 1px solid $hover;
+    background: $hover;
   }
 }
 
@@ -19,14 +17,12 @@
  * @msg: 空心按钮
  * @param {type} String
  */
-@mixin h--button-hollow($type) {
-  @include theme($themes) {
-    color: themed($type);
+@mixin h--button-hollow($type, $hover) {
+  color: $type;
+  background: none;
+  &:hover {
     background: none;
-    &:hover {
-      background: none;
-      border-color: themed($type+'-hover');
-      color: themed($type+'-hover');
-    }
+    border-color: $hover;
+    color: $hover;
   }
 }

@@ -9,9 +9,7 @@
   cursor: pointer;
   outline: 0;
   border-radius: 5px;
-  @include theme($themes) {
-    color: themed('textBlack');
-  }
+  color: $c-textBlack;
   .h--button--icon {
     float: left;
     margin-top: 2px;
@@ -41,12 +39,10 @@
  * @msg: 默认
  */
 .h--button--default {
-  @include theme($themes) {
-    border: 1px solid themed('border');
-    background: themed('default');
-    &:hover {
-      background: themed('default-hover');
-    }
+  border: 1px solid $c-border;
+  background: $c-default;
+  &:hover {
+    background: $c-default-hover;
   }
 }
 /**
@@ -54,12 +50,10 @@
  * @msg: 默认空心
  */
 .h--button--default--hollow {
-  @include theme($themes) {
+  background: none;
+  &:hover {
+    color: $c-textGrey;
     background: none;
-    &:hover {
-      color: themed('textGrey');
-      background: none;
-    }
   }
 }
 /**
@@ -70,13 +64,9 @@
   border: 0;
   outline: 0;
   background: none !important;
-  @include theme($themes) {
-    color: themed('textButton');
-  }
+  color: $c-textButton;
   &:hover {
-    @include theme($themes) {
-      color: themed('textButton-hover');
-    }
+    color: $c-textButton-hover;
   }
  }
 
@@ -87,14 +77,12 @@
  .h--button--disabled:disabled, 
  .h--button--disabled:disabled:active, 
  .h--button--disabled:disabled:hover {
-  @include theme($themes) {
-    color: themed('textBlack');
-    cursor: not-allowed;
-    border-color: themed('disabled-border');
-    background-color: themed('disabled');
-    &:hover {
-      color: themed('textBlack');
-    }
+  color: $c-textBlack;
+  cursor: not-allowed;
+  border-color: $c-disabled-border;
+  background-color: $c-disabled;
+  &:hover {
+    color: $c-textBlack;
   }
 }
 
@@ -113,10 +101,10 @@
  * hollow 空心
  */
 .h--button--primary {
-  @include h--button('primary')
+  @include h--button($c-primary, $c-primary-hover)
 }
 .h--button--primary--hollow {
-  @include h--button-hollow('primary')
+  @include h--button-hollow($c-primary, $c-primary-hover)
 }
 
 /**
@@ -125,10 +113,10 @@
  * hollow 空心
  */
  .h--button--success {
-  @include h--button('success')
+  @include h--button($c-success, $c-success-hover)
 }
 .h--button--success--hollow {
-  @include h--button-hollow('success')
+  @include h--button-hollow($c-success, $c-success-hover)
 }
 
 /**
@@ -137,10 +125,10 @@
  * hollow 空心
  */
  .h--button--danger {
-  @include h--button('danger')
+  @include h--button($c-danger, $c-danger-hover)
 }
 .h--button--danger--hollow {
-  @include h--button-hollow('danger')
+  @include h--button-hollow($c-danger, $c-danger-hover)
 }
 
 /**
@@ -149,10 +137,10 @@
  * hollow 空心
  */
  .h--button--warning {
-  @include h--button('warning')
+  @include h--button($c-warning, $c-warning-hover)
 }
 .h--button--warning--hollow {
-  @include h--button-hollow('warning')
+  @include h--button-hollow($c-warning, $c-warning-hover)
 }
 
 /**
@@ -161,10 +149,10 @@
  * hollow 空心
  */
  .h--button--info {
-  @include h--button('info')
+  @include h--button($c-info, $c-info-hover)
 }
 .h--button--info--hollow {
-  @include h--button-hollow('info')
+  @include h--button-hollow($c-info, $c-info-hover)
 }
 
 

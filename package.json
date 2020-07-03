@@ -1,14 +1,14 @@
 {
-  "name": "h-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ypl-ui",
+  "version": "0.1.4",
   "description": "h-ui",
   "author": "chenzhanghui <13126618000@163.com>",
+  "main": "./lib/h-ui.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name ypl --dest lib ypl-ui/index.js"
+    "lib": "vue-cli-service build --target lib --name h-ui --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

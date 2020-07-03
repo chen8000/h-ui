@@ -1,15 +1,13 @@
 
 // 多种主题色
 // 颜色参考图：https://at-ui.github.io/at-ui/#/zh/guide/color
-$themes: (
-  theme1: (
-    // ---------------------------  主色
+// ---------------------------  主色
     /**
      * @name: BrandColor
      * @msg: 主色
      */
-     primary: #6190E8,
-     primary-hover: #79a1eb,
+     $c-primary: #6190E8;
+     $c-primary-hover: #79a1eb;
 
 
     // ---------------------------  辅助色【用于标识状态的按钮等】
@@ -17,122 +15,115 @@ $themes: (
     * @name: success
     * @msg: 成功
     */    
-    success: #13CE66,
-    success-hover: #8dd1aa,
+    $c-success: #13CE66;
+    $c-success-hover: #8dd1aa;
 
     /**
     * @name: danger
     * @msg: 危险
     */    
-    danger: #FF4949,
-    danger-hover: #fc8484,
+    $c-danger: #FF4949;
+    $c-danger-hover: #fc8484;
 
     /**
     * @name: warning
     * @msg: 警告
     */    
-    warning: #FFC82C,
-    warning-hover: #ffdb76,
+    $c-warning: #FFC82C;
+    $c-warning-hover: #ffdb76;
 
     /**
     * @name: info
     * @msg: 信息
     */    
-    info: #909399,
-    info-hover: #a6a9ad,
+    $c-info: #909399;
+    $c-info-hover: #a6a9ad;
 
     /**
     * @name: default
     * @msg: 默认
     */    
-    default: #fff,
-    default-hover: #f3f7fa,
+    $c-default: #fff;
+    $c-default-hover: #f3f7fa;
 
     /**
     * @name: text
     * @msg: 文字按钮
     */    
-    textButton: #3f536e,
-    textButton-hover: #6190E8,
+    $c-textButton: #3f536e;
+    $c-textButton-hover: #6190E8;
 
     /**
     * @name: disabled
     * @msg: 禁用状态颜色
     */    
-    disabled: #f7f7f7,
-    disabled-border: #ececec,
+    $c-disabled: #f7f7f7;
+    $c-disabled-border: #ececec;
 
     // ---------------------------  次辅助色【用于不那么重要的信息等】
     /**
     * @name: roof
     * @msg: 次色级别 1
     */    
-    roof: #C2ABC7,
+    $c-roof: #C2ABC7;
 
     /**
     * @name: curtain
     * @msg: 次色级别 2
     */    
-    curtain: #F0D0D5,
+    $c-curtain: #F0D0D5;
 
     /**
     * @name: door
     * @msg: 次色级别 3
     */ 
-    door: #F1E4ED,
+    $c-door: #F1E4ED;
 
     /**
     * @name: wall
     * @msg: 次色级别 4
     */ 
-    wall: #EEF0F0,
+    $c-wall: #EEF0F0;
 
     // --------------------------- 中性色【用于文本、背景和边框】
     /**
     * @name: header
     * @msg: 标题
     */    
-    header: #2C405A,
+    $c-header: #2C405A;
 
     /**
     * @name: textBlack
     * @msg: 正文 - 黑
     */    
-    textBlack: #35373a,
+    $c-textBlack: #35373a;
 
     /**
     * @name: textGrey
     * @msg: 正文 - 灰
     */    
-    textGrey: #8DABC4,
+    $c-textGrey: #8DABC4;
 
     /**
     * @name: iconColor
     * @msg: 图表
     */    
-    iconColor: #A8C6DF,
+    $c-iconColor: #A8C6DF;
 
     /**
     * @name: border
     * @msg: 边框
     */    
-    border: #C5D9E8,
+    $c-border: #C5D9E8;
 
     /**
     * @name: bgBlue
     * @msg: 背景色 - 浅蓝
     */    
-    bgBlue: #ECF5FD,
+    $c-bgBlue: #ECF5FD;
 
     /**
     * @name: bgWhite
     * @msg: 背景色 - 米白
     */    
-    bgWhite: #FAFBFC,
-
-  ),
-
-  theme2: (
-    
-  )
-);
+    $c-bgWhite: #FAFBFC;
