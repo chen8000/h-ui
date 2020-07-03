@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 16:38:45
+ * @LastEditTime: 2020-07-03 16:44:34
  */ 
 import { getCoordinate, addClass } from '@/tools'
 /**
@@ -11,11 +11,6 @@ import { getCoordinate, addClass } from '@/tools'
  */
 export const ripples = ({object, color}) => {
   object.addEventListener('mousedown', function(event) {
-    // let interval = null
-    // let count = 0
-    // interval = setInterval(() => {
-    //   count ++
-    //   count === 1 && clearInterval(interval)
       addClass(this, 'h--ripples--parent')
       let span = document.createElement('span')
       addClass(span, 'h--ripples')
@@ -34,13 +29,12 @@ export const ripples = ({object, color}) => {
       span.style.left = `${pageX}px`
       span.style.top = `${pageY}px`
       span.style.background = color
-      span.style.transition = `all 1s linear`
+      span.style.transition = `all .8s linear`
       span.style.transform = `scale(${scalMultiple * 2})`
       span.style.opacity = 0
 
       setTimeout(() => {
         this.removeChild(span)
-      },1000)
-    // }, 100)
+      },800)
   }, !1)
 }

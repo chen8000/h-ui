@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 12:27:46
+ * @LastEditTime: 2020-07-03 16:53:25
 --> 
 
 <template>
@@ -67,7 +67,10 @@
       <h-button mini>默认按钮</h-button>
       <h-button type="text" mini>文字按钮</h-button>
     </div>
-    <h-button type="primary" long>主色按钮</h-button>
+    <div class="row1">
+      <p>宽度撑满父元素</p>
+      <h-button type="primary" long>主色按钮</h-button>
+    </div>
   </div>
 </template>
 <script>

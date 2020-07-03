@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 15:41:58
+ * @LastEditTime: 2020-07-03 16:58:05
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -16,7 +16,7 @@
     `${long ? 'h--button--long' : ''}`
   ]">
     <span>
-      <i v-if="!!icon" :class="['h--button--icon', icon]"></i>
+      <i v-if="icon" :class="['h--button--icon', icon]"></i>
       <slot></slot>
     </span>
   </button>
