@@ -1,3 +1,8 @@
+/*
+ * @Date: 2020-07-01 16:25:58
+ * @LastEditors: chenzhanghui
+ * $c 代表$color
+ */ 
 
 // 多种主题色
 // 颜色参考图：https://at-ui.github.io/at-ui/#/zh/guide/color
@@ -7,8 +12,10 @@
      * @msg: 主色
      */
      $c-primary: #6354D3;
+     // 主色hover颜色
      $c-primary-hover: #7b6fd8;
-     $c-primary-text-color: #fff;
+     // 主色背景上的文字颜色
+     $c-primary-text-color: #fff; 
 
 
     // ---------------------------  辅助色【用于标识状态的按钮等】
