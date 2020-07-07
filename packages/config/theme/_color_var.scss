@@ -136,6 +136,18 @@
 
     /**
     * @name: bgWhite
-    * @msg: 背景色 - 米白
+    * @msg: 背景色 - 白
     */    
-    $c-bgWhite: #FAFBFC;
+    $c-bgWhite: #fff;  
+
+    // ----------------------------- table 表格颜色配置
+    /**
+     * @name: $c-table-bg-xxx
+     * @msg: 表格的颜色配置
+     */
+    // default
+    $c-table-default-tr-bg: #fff;
+    // 白色tr
+    $c-table-isBg-tr: #F8F8F8;
+    $c-table-tr-hover: #F5F7FA;
+    

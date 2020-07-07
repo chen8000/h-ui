@@ -18,3 +18,11 @@
     z-index: 0;
   }
 }
+
+/**
+ * @name: h--table--hover--shadow
+ * @msg: 表格hover时的阴影
+ */
+ @mixin h--table--hover--shadow {
+  box-shadow:3px 2px 5px rgb(233, 234, 235);
+ }

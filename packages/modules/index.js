@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-03 16:44:34
+ * @LastEditTime: 2020-07-07 14:16:12
  */ 
 import { getCoordinate, addClass } from '@/tools'
 /**
@@ -29,12 +29,12 @@ export const ripples = ({object, color}) => {
       span.style.left = `${pageX}px`
       span.style.top = `${pageY}px`
       span.style.background = color
-      span.style.transition = `all .8s linear`
+      span.style.transition = `all .3s linear`
       span.style.transform = `scale(${scalMultiple * 2})`
       span.style.opacity = 0
 
       setTimeout(() => {
         this.removeChild(span)
-      },800)
+      },300)
   }, !1)
 }
