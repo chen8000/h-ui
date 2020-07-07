@@ -1,17 +1,16 @@
 <!--
  * @Date: 2020-07-07 14:36:13
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 16:12:14
+ * @LastEditTime: 2020-07-07 18:39:19
 --> 
 <template>
   <div 
     id="tableBox" 
     :class="[
-      'h--table h--table--default',
-      `${isBg ? 'h--table--bg' : ''}`,
-      `${shadow ? 'h--table--hover--shadow' : ''}`
+      `${yplTable && 'h--table h--table--default'}`,
+      `${yplTable && isBg && 'h--table--bg'}`,
+      `${yplTable && shadow && 'h--table--hover--shadow'}`
       ]"
-      
     :style="{'height': tableHeight}">
     <div ref="table" >
       <slot></slot>
@@ -23,6 +22,11 @@
   export default {
     name: 'h-table',
     props: {
+      // 是否使用ypl table
+      yplTable: {
+        type: Boolean,
+        default: false
+      },
       // 表格tr是否带背景 is-bg
       isBg: {
         type: Boolean,

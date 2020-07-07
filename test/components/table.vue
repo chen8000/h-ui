@@ -1,11 +1,11 @@
 <!--
  * @Date: 2020-07-07 14:50:51
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 16:45:44
- * @msg 对表格做了一些兼容和样式上的修改
+ * @LastEditTime: 2020-07-07 18:08:31
+ * @msg 对表格做了一些兼容和样式上的修改 
 --> 
 <template>
-  <h-table shadow is-bg :data-length="5" :tr-height="50">
+  <h-table shadow :data-length="5" :tr-height="50">
     <el-table :data="tableData">
         <el-table-column prop="date" label="日期" width="180"></el-table-column>
         <el-table-column prop="name" label="姓名" width="180"></el-table-column>

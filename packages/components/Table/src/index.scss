@@ -38,6 +38,9 @@
   // .el-table__body-wrapper .el-table__row {
   //   background: $c-table-default-bg;
   // }
+  // .el-table th, .el-table tr {
+  //   background: none !important;
+  // }
   .el-table td, .el-table th {
     padding: 0;
   }
@@ -51,6 +54,14 @@
   .el-table tr:hover td .cell{
     background: $c-table-tr-hover;
     transform: translateY(-1px);
+  }
+  .el-table,
+  .el-table th,
+  .el-table tr{
+    background: none;
+  }
+  .el-table__body-wrapper .el-table__row {
+    background: none;
   }
 }
 
@@ -67,14 +78,7 @@
 
 // 灰色背景 白色tr
 .h--table--bg {
-  .el-table,
-  .el-table th,
-  .el-table tr{
-    background: none;
-  }
-  .el-table__body-wrapper .el-table__row {
-    background: none;
-  }
+  
   .el-table td .cell {
     background: $c-table-isBg-tr;
   }

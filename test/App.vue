@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 14:51:56
+ * @LastEditTime: 2020-07-07 18:08:38
 --> 
 
 
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style>
+  #app{
+    background: #eee;
+  }
 *{
     padding: 0;
     margin: 0;
