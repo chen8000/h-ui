@@ -1,7 +1,8 @@
 <!--
  * @Date: 2020-07-07 14:50:51
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 15:59:13
+ * @LastEditTime: 2020-07-07 16:08:09
+ * @msg 解决
 --> 
 <template>
   <h-table shadow is-bg :data-length="5" :tr-height="50">

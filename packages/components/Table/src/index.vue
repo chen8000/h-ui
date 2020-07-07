@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-07 14:36:13
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 15:54:39
+ * @LastEditTime: 2020-07-07 16:12:14
 --> 
 <template>
   <div 
@@ -52,10 +52,7 @@
       }
     },
     watch: {
-      tableData () {
-        this.setTableHeight()
-      },
-      pageSize () {
+      dataLength () {
         this.setTableHeight()
       }
     },
