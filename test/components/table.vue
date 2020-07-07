@@ -1,8 +1,8 @@
 <!--
  * @Date: 2020-07-07 14:50:51
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 16:08:09
- * @msg 解决
+ * @LastEditTime: 2020-07-07 16:45:44
+ * @msg 对表格做了一些兼容和样式上的修改
 --> 
 <template>
   <h-table shadow is-bg :data-length="5" :tr-height="50">
@@ -40,6 +40,6 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+  
 </style>
