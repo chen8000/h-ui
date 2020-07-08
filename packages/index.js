@@ -2,15 +2,17 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:45:46
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 14:50:33
+ * @LastEditTime: 2020-07-08 16:33:15
  */ 
 import HButton from './components/Button'
 import HTable from './components/Table'
+import HPagination from './components/Pagination'
 
 // 组件列表
 const components = [
   HButton,
-  HTable
+  HTable,
+  HPagination
 ]
 
 // 定义install 方法，接收 Vue 作为参数，如果使用 use 注册插件，那么所有组件都会被注册

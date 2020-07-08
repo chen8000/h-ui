@@ -1,0 +1,75 @@
+.h--pagin {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+  .el-pagination {
+    display: inline-block;
+  }
+  .home-page {
+    height: 28px;
+  }
+  .last-page {
+    font-size: 13px;
+  }
+  .home-page,
+  .last-page {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 5px;
+    margin-left: 8px;
+    background: $c-bgGrey;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    font-weight: 700;
+    color: $c-textBlack;
+    border-radius: 4px;
+    
+    &:hover {
+      color: $c-primary;
+    }
+  }
+  .last-page {
+    margin-left: 0;
+  }
+  .page-disable {
+    cursor: not-allowed;
+    color: $c-textBlack !important;
+    &:hover {
+      color: $c-textBlack !important;
+    }
+  }
+
+  .el-pagination.is-background .el-pager {
+    display: inline;
+  }
+  .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background: $c-primary;
+    color: $c-primary-text-color;
+  }
+
+  .el-pagination.is-background .el-pager li:not(.disabled):hover,
+  .el-pagination.is-background .el-pager li:hover {
+    color: $c-primary;
+  }
+  .el-pagination.is-background .el-pager li.active:hover {
+    color: $c-primary-text-color;
+  }
+  .el-pagination__jump {
+    color: $c-primary;
+  }
+  .el-pagination__editor.el-input {
+    position: unset;
+  }
+  .el-pagination__editor.el-input .el-input__inner {
+    border: 0;
+    text-align: center;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid $c-primary;
+    color: $c-primary;
+  }
+}

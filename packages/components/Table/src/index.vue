@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-07 14:36:13
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 19:06:41
+ * @LastEditTime: 2020-07-08 16:37:28
 --> 
 <template>
   <div 
@@ -24,7 +24,7 @@
     props: {
       // 是否使用ypl table
       yplTable: {
-        type: f,
+        type: Boolean,
         default: false
       },
       // 表格tr是否带背景 is-bg
