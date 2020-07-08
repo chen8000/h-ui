@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-07-02 10:24:25
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 15:18:12
+ * @LastEditTime: 2020-07-08 17:54:53
  */
  
 /**
@@ -50,4 +50,26 @@ export const removeClass = (elem, cls) =>{
       }
       elem.className = newClass.replace(/^\s+|\s+$/g, '')
   }
+}
+
+/**
+ * @name: transTime
+ * @msg: 格式化分钟数： 把秒转为 00:00
+ * @param {type} Number
+ * @return: String  --> 00:00
+ */
+export const transTime = t => {
+  let d = parseInt(t)
+  let m = parseInt(d/60)
+  let sec = d % 60 + ''
+  let isM0 = ':'
+  if (m == 0) {
+      m = '00'
+  } else if (m < 10 ) {
+      m = '0'+m
+  }
+  if (sec.length == 1) {
+      sec = '0' + sec
+  }
+  return m + isM0 + sec
 }
