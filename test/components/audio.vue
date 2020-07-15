@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 18:07:50
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 18:31:23
+ * @LastEditTime: 2020-07-15 14:44:44
 --> 
 <template>
   <div class="audio">
@@ -17,7 +17,7 @@
 
 <style lang="scss" scoped>
   .audio {
-    width: 500px;
+    // width: 500px;
     margin-top: 500px;
   }
 </style>

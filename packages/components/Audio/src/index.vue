@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 16:07:34
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 18:35:31
+ * @LastEditTime: 2020-07-15 15:28:41
 --> 
 <template>
   <!-- 自定义样式 -->
@@ -14,34 +14,31 @@
     <div class="audio-container">
       <!--  播放暂停按钮 -->
       <div class="btn-group"  @mouseover="playOver" @mouseleave="playLeave">
-        <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
-          <i v-if="!playStatus" @click="handlePlay" :class="['iconfont iconbofang', {'animated tada': hoverClass}]"></i>
-        </transition>
+        <!-- <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
+          
+        </transition> -->
+        <i v-if="!playStatus" @click="handlePlay" class="iconfont iconbofang"></i>
         <!-- jackInTheBox  rollOut-->
-        <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
-          <i v-if="playStatus" :class="['iconfont iconzantingtingzhi', {'animated tada': hoverClass}]" @click="handlePause"></i>
-        </transition>
+        <!-- <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
+          
+        </transition> -->
+        <i v-if="playStatus" class="iconfont iconzantingtingzhi" @click="handlePause"></i>
       </div>
       <!-- 播放时间 -->
       <p class="currentTime">{{currentTimes}}/{{total}}</p>
       <el-slider ref="slider" class="ele-progress" :format-tooltip="formatTooltip" v-model="progress" @input="progressChange"></el-slider>
-    </div>
-    <div class="sound" @mouseover="soundOver" @mouseleave="soundLeave" >
-      <!-- 音量 -->
-      <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
+      <div class="sound" @mouseover="soundOver" @mouseleave="soundLeave" >
+        <!-- 音量 -->
         <div class="sound-box" v-show="soundClass">
           <el-slider vertical v-model="sound" :show-tooltip="false" @input="soundChange"></el-slider>
         </div>
-      </transition>
 
-      <!-- 音量icon -->
-      <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
-        <i v-if="resSound > 0.0" :class="['iconfont iconyinliang', {'animated tada': soundClass}]"></i>
-      </transition>
-      <transition enter-active-class="animated bounceIn" leave-active-class="animated zoomOut">
-        <i v-if="resSound === '0.0'" :class="['iconfont iconyinliangjingyinx soundno', {'animated tada': soundClass}]"></i>
-      </transition>
+        <!-- 音量icon -->
+        <i v-if="resSound > 0.0" class="iconfont iconjingyin1"></i>
+        <i v-if="resSound === '0.0'" class="iconfont iconjingyin"></i>
+      </div>
     </div>
+    
   </div>
 </template>
 
