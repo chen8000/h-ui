@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 18:08:33
+ * @LastEditTime: 2020-07-15 17:04:22
 --> 
 
 
@@ -12,6 +12,7 @@
     <!-- <Table/> -->
     <!-- <Pagination/> -->
     <Audio/>
+    <Input/>
   </div>
 </template>
 <script>
@@ -19,13 +20,15 @@
 // import Table from './components/table'
 // import Pagination from './components/pagination'
 import Audio from './components/audio'
+import Input from './components/input'
 export default {
   name: 'App',
   components: {
     // Button,
     // Table,
     // Pagination,
-    Audio
+    Audio,
+    Input
   }
 }
 </script>

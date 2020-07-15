@@ -108,7 +108,14 @@
     * @name: textBlack
     * @msg: 正文 - 黑
     */    
-    $c-textBlack: #35373a;
+    $c-textBlack: #333;
+
+    /**
+    * @name: textDark
+    * @msg: 正文 - 暗色
+    */   
+    $c-textDark: #666; 
+
 
     /**
     * @name: textGrey

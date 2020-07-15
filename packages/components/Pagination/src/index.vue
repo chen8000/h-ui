@@ -1,10 +1,10 @@
 <!--
  * @Date: 2020-07-08 16:06:44
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 17:45:20
+ * @LastEditTime: 2020-07-15 15:58:10
 --> 
 <template>
-  <div class="h--pagin">
+  <div :class="['h--pagin', {'h--pagin--right':right}]">
     <span v-if="total > pageSize" class="el-pagination__jump">
       前往
       <div class="el-input el-pagination__editor is-in-pagination">
@@ -48,6 +48,11 @@
       },
       // pageSize 改变时会触发
       sizeChange: Function,
+      // 靠右
+      right: {
+        type: Boolean,
+        default: false
+      }
     },
     data () {
       return {

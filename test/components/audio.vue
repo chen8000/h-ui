@@ -1,11 +1,18 @@
 <!--
  * @Date: 2020-07-08 18:07:50
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-15 14:44:44
+ * @LastEditTime: 2020-07-15 18:25:04
 --> 
 <template>
   <div class="audio">
-    <h-audio :src="require('../assets/audio/m.mp3')"/>
+    <h-audio :volume-button="true" :src="require('../assets/audio/m.mp3')"/>
+    <br/>
+    <h-audio 
+      title="语音001"
+      layout="l1" 
+      :volume-button="true"
+      :volume="100" 
+      :src="require('../assets/audio/m.mp3')"/>
   </div>
 </template>
 
@@ -17,7 +24,6 @@
 
 <style lang="scss" scoped>
   .audio {
-    // width: 500px;
-    margin-top: 500px;
+    margin: 100px;
   }
 </style>

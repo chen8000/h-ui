@@ -1,4 +1,5 @@
 
+.h--audio--layout-l1,
 .h--audio-box {
   width: 100%;
   height: 30px;
@@ -10,7 +11,7 @@
     margin-left: 15px;
     cursor: pointer;
     .iconfont {
-      color: $c-textBlack;
+      color: $c-textDark;
       display: inline-block;
       transition: color .3s ease;
       width: 15px;
@@ -23,14 +24,15 @@
     // }
     .sound-box {
       background: $c-bgBlue;
-      border-radius: 20px;
-      padding: 10px 0;
+      border: 1px solid $c-border;
+      border-radius: 4px;
+      padding: 20px 0 10px 0;
       padding-bottom: 15px;
       position: absolute;
       right: 50%;
       left: 50%;
       bottom: 0;
-      transform: translate(-50%, -30%);
+      transform: translate(-50%, -25%);
       // display: block!important;
       width: 20px;
       height: 60px;
@@ -58,11 +60,14 @@
         }
       }
     }
+    .h--radius {
+      border-radius: 20px;
+    }
   }
   .audio-container {
     background: $c-bgBlue;
-    border-radius: 20px;
-    padding: 0 12px;
+    border-radius: 4px;
+    padding: 0 18px 0 10px;
     display: flex;
     align-items: center;
     .btn-group {
@@ -80,14 +85,17 @@
         margin: auto 0;
         font-size: 16px;
         cursor: pointer;
-        color: $c-textBlack;
+        color: $c-textDark;
       }
     }
+  }
+  .h--radius {
+    border-radius: 20px;
   }
   .currentTime {
     font-size: 13px;
     margin-right: 20px;
-    color: $c-textBlack;
+    color: $c-textDark;
   }
   .el-slider {
     flex: 1;
@@ -110,12 +118,72 @@
   }
   .el-slider__button {
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
     background: $c-primary;
     border-color: $c-primary;
   }
   .el-slider__runway {
     background: $c-bgBlue - 15;
+  }
+}
+
+.h--audio--layout-l1 {
+  height: auto;
+  .currentTime {
+    display: block;
+    text-align: right;
+    margin: 0;
+  }
+  .el-slider__runway {
+    margin: 7px 0;
+  }
+  .audio-container {
+    display: block;
+    padding: 20px;
+    padding-left: 90px;
+    position: relative;
+    .btn-group {
+      // border: 1px solid red;
+      position: absolute;
+      left:0;
+      top: 0;
+      width: 80px;
+      .iconfont {
+        width: 24px;
+        height: 19px;
+        // border: 1px solid red;
+        right: 0;
+        margin: auto;
+        font-size: 25px;
+        color: $c-primary;
+      }
+    }
+    .audio-title {
+      float: left;
+      color: $c-textBlack;
+      font-size: 16px;
+    }
+  }
+  .h--volume-l1 {
+    padding-right: 50px;
+  }
+  .sound {
+    width: 20px;
+    height: 18px;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto 0;
+    .iconfont {
+      font-size: 20px;
+      color: $c-primary;
+    }
+    .sound-box {
+      transform: translate(-50%, -20%);
+    }
   }
 }
