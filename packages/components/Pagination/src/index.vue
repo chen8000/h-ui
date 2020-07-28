@@ -112,6 +112,6 @@
 </script>
 
 <style lang="scss">
-  @import '@/config/theme';
+  @import '@/assets/theme';
   @import './index.scss';
 </style>

@@ -1,16 +1,16 @@
 <!--
  * @Date: 2020-07-08 16:07:34
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-15 18:17:22
+ * @LastEditTime: 2020-07-28 14:11:17
 -->
 <template>
   <!-- 自定义样式 -->
   <div :class="['h--audio-box', `h--audio--layout-${layout}`]">
     <audio ref="audio" v-show="true" :src="src"
-    @loadedmetadata="getTimeTotal" 
-    @timeupdate="audioTimeUpDate"
-    @error="loadError"
-    @ended="handleEnd"></audio>
+      @loadedmetadata="getTimeTotal" 
+      @timeupdate="audioTimeUpDate"
+      @error="loadError"
+      @ended="handleEnd"></audio>
     <div
       :class="['audio-container', {'h--radius': radius}, {'h--volume-l1': volumeButton && ['l1'].includes(layout)}]">
       <!--  播放暂停按钮 -->
@@ -176,6 +176,6 @@
 </script>
 
 <style lang="scss">
-  @import '@/config/theme';
+  @import '@/assets/theme';
   @import './index.scss';
 </style>

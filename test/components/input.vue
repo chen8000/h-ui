@@ -1,11 +1,20 @@
 <!--
  * @Date: 2020-07-15 16:06:33
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-15 16:24:08
+ * @LastEditTime: 2020-07-28 17:56:45
 --> 
 <template>
-  <div>
-    <h-input v-model="inputVal"/>
+  <div style="margin: 50px;">
+    <h-input 
+      v-model="inputVal"
+      clearable
+      @blur="handleBlur"
+      @focus="handleFocus"
+      type="text">
+      <!-- <i slot="left-icon" class="iconfont iconbianji3"></i> -->
+      <i slot="right-icon" class="iconfont iconbianji3"></i>
+    </h-input>
+    {{inputVal}}
   </div>
 </template>
 
@@ -16,12 +25,12 @@
         inputVal: ''
       }
     },
-    watch: {
-      inputVal(v){
-        console.log('------', v)
+    methods: {
+      handleBlur(event){
+        console.log('blur>>>', event.target.value)
       },
-      handleEmit(e){
-        console.log('eeee', e)
+      handleFocus(event){
+        console.log('focus>>>', event.target.value)
       }
     }
   }

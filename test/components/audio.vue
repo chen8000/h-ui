@@ -1,11 +1,11 @@
 <!--
  * @Date: 2020-07-08 18:07:50
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-15 18:25:04
+ * @LastEditTime: 2020-07-28 10:17:28
 --> 
 <template>
   <div class="audio">
-    <h-audio :volume-button="true" :src="require('../assets/audio/m.mp3')"/>
+    <h-audio :volume-button="true" download :src="require('../assets/audio/m.mp3')"/>
     <br/>
     <h-audio 
       title="语音001"

@@ -1,0 +1,128 @@
+.h--input {
+  padding: 0;
+  position: relative;
+  .h--input--ele {
+    transition: all .3s ease;
+    border: 1px solid $c-input-border;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    outline: 0;
+    padding: 0 7px;
+    font-size:  $fontSizeDefault;
+    box-sizing: border-box;
+    color: $c-textBlack;
+    &:hover {
+      border-color: $c-input-hover-border;
+    }
+    &:focus {
+      border-color: rgba($c-primary, .6);
+    }
+
+
+    &::-webkit-input-placeholder {
+      color: $c-input-placeholder-color;
+    }
+    &:-moz-placeholder {
+      /* FF 4-18 */
+      color: $c-input-placeholder-color;
+    }
+    &::-moz-placeholder {
+      /* FF 19+ */
+      color: $c-input-placeholder-color;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $c-input-placeholder-color;
+    }
+  }
+
+  .h--input--show-pwd,
+  .h--input--clearable {
+    cursor: pointer;
+  }
+  
+  .h--input--radius {
+    border-radius: 4px;
+  }
+  .h--input--ele {
+    &:focus {
+      // box-shadow: 0 0 8px 0px $c-primary-light;
+      border-color: rgba($c-primary, .6);
+      // animation: inputPrimaryShadow 1s ease infinite alternate;
+    }
+  }
+  .h--input--ele-shadow {
+    &:focus {
+      box-shadow: 0 0 8px 0px $c-primary-light;
+      animation: inputPrimaryShadow 1s ease infinite alternate;
+    }
+  }
+  .h--input--danger {
+    &:focus {
+      border-color: rgba($c-danger, .6);
+      
+    }
+  }
+  .h--input--danger--shadow {
+    &:focus {
+      box-shadow: 0 0 8px 0px $c-danger-light;
+      animation: inputDangerShadow 1s ease infinite alternate;
+    }
+  }
+  .h--input--disabled {
+    cursor: not-allowed;
+    &:hover {
+      border-color: $c-input-border;
+    }
+  }
+  
+  .h--input--left--icon {
+    padding-left: 30px;
+  }
+  .h--input--right--icon {
+    padding-right: 30px;
+  }
+  .h--left--icon--container,
+  .h--right--icon--container {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: $c-textDark;
+      &:hover {
+        color: $c-primary;
+      }
+    }
+  }
+  .h--left--icon--container {
+    left: 0;
+  }
+  .h--right--icon--container {
+    right: 0;
+  }
+}
+// 阴影呼吸效果
+@keyframes inputPrimaryShadow {
+  0% {
+    box-shadow: 0 0 8px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 8px 0px $c-primary-light;
+  }
+}
+// 危险
+@keyframes inputDangerShadow {
+  0% {
+    box-shadow: 0 0 8px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 8px 0px $c-danger-light;
+  }
+}

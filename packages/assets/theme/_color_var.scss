@@ -16,6 +16,8 @@
      $c-primary-hover: #7b6fd8;
      // 主色背景上的文字颜色
      $c-primary-text-color: #fff; 
+     // 主题淡色
+     $c-primary-light: #dad7fa;
 
 
     // ---------------------------  辅助色【用于标识状态的按钮等】
@@ -34,6 +36,7 @@
     $c-danger: #FF4949;
     $c-danger-hover: #fc8484;
     $c-danger-text-color: #fff;
+    $c-danger-light: #fad0d0; // 危险轻
 
     /**
     * @name: warning
@@ -124,6 +127,12 @@
     $c-textGrey: #8DABC4;
 
     /**
+    * @name: input-placeholder
+    * @msg: input placeholder的颜色
+    */    
+    $c-input-placeholder-color: #d3d3d3;
+
+    /**
     * @name: iconColor
     * @msg: 图表
     */    
@@ -133,8 +142,16 @@
     * @name: border
     * @msg: 边框
     */    
+    $c-default-border: rgb(233, 233, 233);
     $c-border: #C5D9E8;
     $c-borderDark: rgba(207, 207, 207, 0.2);
+
+    /**
+    * @name: input-border
+    * @msg: input边框组
+    */    
+    $c-input-border: $c-default-border;
+    $c-input-hover-border: rgb(197, 197, 197);
 
     /**
     * @name: bgBlue
