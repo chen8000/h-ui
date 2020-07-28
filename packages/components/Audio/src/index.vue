@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 16:07:34
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 14:11:17
+ * @LastEditTime: 2020-07-28 18:48:56
 -->
 <template>
   <!-- 自定义样式 -->
@@ -176,6 +176,7 @@
 </script>
 
 <style lang="scss">
+  @import '../../../assets/fonts/iconfont.css';
   @import '@/assets/theme';
   @import './index.scss';
 </style>

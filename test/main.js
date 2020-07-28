@@ -2,13 +2,13 @@
 /*
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 17:24:24
+ * @LastEditTime: 2020-07-28 18:43:33
  */ 
 import Vue from 'vue'
 import App from './App.vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import './fonts/iconfont.css'
+// import './fonts/iconfont.css'
 
 Vue.use(ElementUI)
 /**
