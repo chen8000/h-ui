@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 17:55:01
+ * @LastEditTime: 2020-07-28 18:36:07
 --> 
 <template>
   <div 
@@ -32,7 +32,6 @@
       ]"
       @blur="$emit('blur', $event)"
       @focus="$emit('focus', $event)"
-      @change="$emit('change', $event)"
       @input="handleInput">
     <div :class="{'h--right--icon--container': rightJud}">
       <slot name="right-icon" v-if="!iconCross">
@@ -135,6 +134,7 @@
     },
     data(){
       return {
+        // 视图动态标记
         inputVal: '',
         showPwd: false,
         iconOpacity: '0'
