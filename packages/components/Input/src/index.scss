@@ -1,6 +1,7 @@
 .h--input {
   padding: 0;
   position: relative;
+  min-width: 50px;
   .h--input--ele {
     transition: all .3s ease;
     border: 1px solid $c-input-border;
