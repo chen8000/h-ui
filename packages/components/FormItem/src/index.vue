@@ -1,15 +1,10 @@
 <!--
  * @Date: 2020-07-28 18:49:36
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 14:43:47
+ * @LastEditTime: 2020-07-29 17:39:31
 --> 
 <template>
   <div :class="['h--form--item',`h--form--item--${layout}`]">
-    <!-- label在左 -->
-    <!-- label在上 -->
-    <!-- label在下 -->
-    <!-- label带星号 -->
-    <!-- 省市区联动 -->
     <div :style="{'width' :labelWidth,'text-align': labelAlign}" 
          :class="[
           'h--form--item--layout',

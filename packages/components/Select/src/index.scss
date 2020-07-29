@@ -1,0 +1,28 @@
+.h--select /deep/{
+  flex: 1;
+  .el-select,
+  .el-input,
+  .el-input__inner {
+    width: 100%;
+    height: 100%;
+  }
+  .el-input__suffix {
+    .el-input__suffix-inner {
+      height: 100%;
+      display: block;
+      .el-input__icon {
+        line-height: 30px;
+      }
+    }
+  }
+
+  .el-input__inner {
+    border-color: $c-input-border;
+    &:hover {
+      border-color: $c-input-hover-border;
+    }
+    &:focus {
+      border-color: rgba($c-primary, .6);
+    }
+  }
+}

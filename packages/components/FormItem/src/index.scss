@@ -8,6 +8,7 @@
 }
 .h--form--item {
   .h--form--item--layout {
+    
     font-size: $fontSizeDefault;
     color: $c-textBlack;
   }
@@ -47,9 +48,10 @@
     }
   }
   .h--form--item--required--right{
-    padding-right: 5px;
+    padding-right: 10px;
+    margin-right: 5px;
     &:before {
-      margin-left: 5px;
+      // margin-left: 5px;
       right: 0;
     }
   }

@@ -1,0 +1,12 @@
+.h--pcc--link {
+  .h--pcc--link--container {
+    display: flex;
+    align-items: center;
+  }
+  .h--connect--symbol {
+    margin: 0 5px;
+    // height: 4px;
+    line-height: 0;
+    color: $c-textDark;
+  }
+}

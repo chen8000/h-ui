@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:45:46
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 14:04:45
+ * @LastEditTime: 2020-07-29 16:39:36
  */ 
 import HButton from './components/Button'
 import HTable from './components/Table'
@@ -10,6 +10,8 @@ import HPagination from './components/Pagination'
 import HAudio from './components/Audio'
 import HInput from './components/Input'
 import HFormItem from './components/FormItem'
+import HPccLink from './components/PccLink'
+import HSelect from './components/Select'
 
 // 组件列表
 const components = [
@@ -18,7 +20,9 @@ const components = [
   HPagination,
   HAudio,
   HInput,
-  HFormItem
+  HFormItem,
+  HPccLink,
+  HSelect
 ]
 
 // 定义install 方法，接收 Vue 作为参数，如果使用 use 注册插件，那么所有组件都会被注册

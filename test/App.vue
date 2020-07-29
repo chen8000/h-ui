@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 11:40:20
+ * @LastEditTime: 2020-07-29 17:07:24
 --> 
 
 
@@ -12,8 +12,9 @@
     <!-- <Table/> -->
     <!-- <Pagination/> -->
     <!-- <Audio/> -->
-    <Input/>
-    <FormInput />
+    <!-- <Input/> -->
+    <!-- <FormInput /> -->
+    <PccLink />
   </div>
 </template>
 <script>
@@ -21,8 +22,9 @@
 // import Table from './components/table'
 // import Pagination from './components/pagination'
 // import Audio from './components/audio'
-import Input from './components/input'
-import FormInput from './components/formInput'
+// import Input from './components/input'
+// import FormInput from './components/formInput'
+import PccLink from './components/pccLink'
 export default {
   name: 'App',
   components: {
@@ -30,8 +32,9 @@ export default {
     // Table,
     // Pagination,
     // Audio,
-    Input,
-    FormInput
+    // Input,
+    // FormInput,
+    PccLink
   }
 }
 </script>

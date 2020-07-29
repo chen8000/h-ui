@@ -1,8 +1,19 @@
 /*
  * @Date: 2020-07-02 10:24:25
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 17:54:53
+ * @LastEditTime: 2020-07-29 16:00:11
  */
+
+// import { province } from './pcc/province'
+// import { city } from './pcc/city'
+// import { county } from './pcc/county'
+
+// // 省市区
+// export const pcc = {
+//   province,
+//   city,
+//   county
+// }
  
 /**
  * @name: coordinate
