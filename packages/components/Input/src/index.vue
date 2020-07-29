@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 11:43:25
+ * @LastEditTime: 2020-07-29 14:35:36
 --> 
 <template>
   <div 
@@ -28,7 +28,7 @@
         {'h--input--danger--shadow': shadow && danger && !bottomLine},
         {'h--input--disabled': disabled},
         {'h--input--left--icon': $slots['left-icon'] || leftIcon},
-        {'h--input--right--icon': $slots['right-icon'] || rightIcon},
+        {'h--input--right--icon': $slots['right-icon'] || rightIcon || clearable},
         {'h--input--bottom-line': bottomLine}
       ]"
       @blur="$emit('blur', $event)"
@@ -41,7 +41,7 @@
       </slot>
       <!-- 清空value -->
         <i 
-          v-if="clearable && inputVal" 
+          v-if="clearable && inputVal && !showPassword" 
           @click="handleClearable" 
           :style="{'opacity': iconOpacity}"
           class="h--input--clearable iconfont iconqingkong"></i>
@@ -115,7 +115,7 @@
         type: String,
         default: ''
       },
-      // 是否可清空
+      // 是否可清空 show-password 时无效
       clearable: {
         type: Boolean,
         default: false
