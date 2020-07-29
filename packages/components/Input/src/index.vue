@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 18:36:07
+ * @LastEditTime: 2020-07-29 11:43:25
 --> 
 <template>
   <div 
@@ -22,13 +22,14 @@
       ref="input"
       :class="[
         'h--input--ele',
-        {'h--input--radius': radius},
-        {'h--input--ele-shadow': shadow},
+        {'h--input--radius': radius && !bottomLine},
+        {'h--input--ele-shadow': shadow && !bottomLine},
         {'h--input--danger': danger},
-        {'h--input--danger--shadow': shadow && danger},
+        {'h--input--danger--shadow': shadow && danger && !bottomLine},
         {'h--input--disabled': disabled},
         {'h--input--left--icon': $slots['left-icon'] || leftIcon},
         {'h--input--right--icon': $slots['right-icon'] || rightIcon},
+        {'h--input--bottom-line': bottomLine}
       ]"
       @blur="$emit('blur', $event)"
       @focus="$emit('focus', $event)"
@@ -77,12 +78,12 @@
         type: String,
         default: '30px'
       },
-      // 是否带圆角
+      // 是否带圆角  bottom-line 为false时有效
       radius: {
         type: Boolean,
         default: true
       },
-      // 获取焦点后是否带阴影
+      // 获取焦点后是否带阴影 bottom-line 为false时有效
       shadow: {
         type: Boolean,
         default: false
@@ -124,6 +125,11 @@
         type: Boolean,
         default: false
       },
+      // 只有一条下划线, radius / shadow 会因此失效
+      bottomLine: {
+        type: Boolean,
+        default: false
+      }
 
       // 左右icon slot插入
       // <!-- <i slot="left-icon" class="iconfont iconbianji3"></i> -->

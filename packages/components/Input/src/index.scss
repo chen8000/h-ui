@@ -107,6 +107,10 @@
   .h--right--icon--container {
     right: 0;
   }
+  .h--input--bottom-line {
+    border: 0;
+    border-bottom: 1px solid $c-input-border;
+  }
 }
 // 阴影呼吸效果
 @keyframes inputPrimaryShadow {
