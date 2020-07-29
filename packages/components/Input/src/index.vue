@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 15:08:05
+ * @LastEditTime: 2020-07-29 15:16:55
 --> 
 <template>
   <div 
@@ -29,7 +29,7 @@
         {'h--input--danger--shadow': shadow && danger && !bottomLine},
         {'h--input--disabled': disabled},
         {'h--input--left--icon': $slots['left-icon'] || leftIcon},
-        {'h--input--right--icon': $slots['right-icon'] || rightIcon || clearable || isMaxlength},
+        {'h--input--right--icon': rightIconClass},
         {'h--input--bottom--line': bottomLine},
         {'h--input--bottom--maxlength': isMaxlength}
       ]"
@@ -42,7 +42,7 @@
         <i v-if="rightIcon" :class="rightIcon"></i>
       </slot>
       <!-- 清空value -->
-        <i v-if="clearable && inputVal && !showPassword && !isMaxlength" 
+        <i v-if="clearable && inputVal && !showPassword" 
           @click="handleClearable" 
           :style="{'opacity': iconOpacity}"
           class="h--input--clearable iconfont iconqingkong">
@@ -59,7 +59,9 @@
         ]">
       </i>
       <!-- maxlength -->
-      <span class="h--maxlength" v-if="maxlength">{{areaLen}}/{{maxlength}}</span>
+      <span class="h--maxlength" v-if="maxlength && !iconCross">
+        {{areaLen}}/{{maxlength}}
+      </span>
     </div>
   </div>
 </template>
@@ -165,6 +167,9 @@
       },
       areaLen(){
         return this.inputVal.length > this.maxlength ? this.maxlength : this.inputVal.length
+      },
+      rightIconClass(){
+        return this.$slots['right-icon'] || this.rightIcon || this.clearable || this.isMaxlength
       }
     },
     mounted(){
