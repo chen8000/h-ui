@@ -109,9 +109,23 @@
   .h--right--icon--container {
     right: 0;
   }
-  .h--input--bottom-line {
+  .h--input--bottom--line {
     border: 0;
     border-bottom: 1px solid $c-input-border;
+  }
+  .h--input--bottom--maxlength {
+    padding-right: 40px;
+  }
+
+  .h--maxlength {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 7px;
+    display: flex;
+    align-items: center;
+    color: rgba($c-textDark, .5);
   }
 }
 // 阴影呼吸效果

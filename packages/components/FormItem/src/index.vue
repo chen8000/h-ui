@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-28 18:49:36
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 14:30:36
+ * @LastEditTime: 2020-07-29 14:43:47
 --> 
 <template>
   <div :class="['h--form--item',`h--form--item--${layout}`]">
@@ -59,60 +59,5 @@
 
 <style lang="scss" scoped>
 @import '@/assets/theme';
-.h--form--item--left {
-  display: flex;
-  align-items: center;
-}
-.h--form--item--bottom {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.h--form--item {
-  .h--form--item--layout {
-    font-size: $fontSizeDefault;
-    color: $c-textBlack;
-  }
-  // .h--form--item--nowrap{
-  //   white-space:nowrap;
-  // }
-  
-  .h--form--item--layout--top{
-    margin-bottom: 5px;
-  }
-  .h--form--item--layout--left{
-    margin-right: 5px;
-  }
-  .h--form--item--layout--bottom{
-    margin-top: 5px;
-  }
-
-  .h--form--item--required--right,
-  .h--form--item--required--left {
-    position: relative;
-    &:before {
-      content: "*";
-      color: $c-danger;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      height: 5px;
-      line-height: 8px;
-    }
-  }
-  .h--form--item--required--left{
-    display: inline-block;
-    padding-left: 10px;
-    &:before {
-      left: 0;
-    }
-  }
-  .h--form--item--required--right{
-    padding-right: 5px;
-    &:before {
-      margin-left: 5px;
-      right: 0;
-    }
-  }
-}
+@import './index.scss';
 </style>

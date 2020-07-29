@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 14:35:36
+ * @LastEditTime: 2020-07-29 15:08:05
 --> 
 <template>
   <div 
@@ -19,6 +19,7 @@
       :type="showPwd ? 'text': type"
       :disabled="disabled"
       :placeholder="placeholder"
+      :maxlength="maxlength"
       ref="input"
       :class="[
         'h--input--ele',
@@ -28,8 +29,9 @@
         {'h--input--danger--shadow': shadow && danger && !bottomLine},
         {'h--input--disabled': disabled},
         {'h--input--left--icon': $slots['left-icon'] || leftIcon},
-        {'h--input--right--icon': $slots['right-icon'] || rightIcon || clearable},
-        {'h--input--bottom-line': bottomLine}
+        {'h--input--right--icon': $slots['right-icon'] || rightIcon || clearable || isMaxlength},
+        {'h--input--bottom--line': bottomLine},
+        {'h--input--bottom--maxlength': isMaxlength}
       ]"
       @blur="$emit('blur', $event)"
       @focus="$emit('focus', $event)"
@@ -40,22 +42,24 @@
         <i v-if="rightIcon" :class="rightIcon"></i>
       </slot>
       <!-- 清空value -->
-        <i 
-          v-if="clearable && inputVal && !showPassword" 
+        <i v-if="clearable && inputVal && !showPassword && !isMaxlength" 
           @click="handleClearable" 
           :style="{'opacity': iconOpacity}"
-          class="h--input--clearable iconfont iconqingkong"></i>
+          class="h--input--clearable iconfont iconqingkong">
+        </i>
 
       <!-- 显示密码 -->
-      <i 
-        v-if="showPassword && inputVal && type === 'password'"
+      <i v-if="showPassword && inputVal && type === 'password'"
         @click="handleShowPwd" 
         :style="{'opacity': iconOpacity}"
         :class="[
           'h--input--show-pwd iconfont',
           {'iconyanjing': !showPwd},
           {'iconyanjing-zhengkai': showPwd }
-        ]"></i>
+        ]">
+      </i>
+      <!-- maxlength -->
+      <span class="h--maxlength" v-if="maxlength">{{areaLen}}/{{maxlength}}</span>
     </div>
   </div>
 </template>
@@ -96,7 +100,7 @@
       // 输入框占位文本
       placeholder: {
         type: String,
-        default: '请输入内容'
+        default: ''
       },
       // 是否禁用
       disabled: {
@@ -129,7 +133,10 @@
       bottomLine: {
         type: Boolean,
         default: false
-      }
+      },
+      // maxlength 限制最大输入值
+      maxlength: Number
+
 
       // 左右icon slot插入
       // <!-- <i slot="left-icon" class="iconfont iconbianji3"></i> -->
@@ -152,6 +159,12 @@
       },
       iconCross(){
         return this.inputVal && this.iconOpacity === '1' && (this.clearable || (this.showPassword && this.type === 'password'))
+      },
+      isMaxlength(){
+        return this.maxlength === 0 || this.maxlength
+      },
+      areaLen(){
+        return this.inputVal.length > this.maxlength ? this.maxlength : this.inputVal.length
       }
     },
     mounted(){
