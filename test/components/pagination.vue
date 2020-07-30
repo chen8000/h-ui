@@ -1,14 +1,14 @@
 <!--
  * @Date: 2020-07-08 16:31:43
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 17:11:38
+ * @LastEditTime: 2020-07-30 11:16:25
 --> 
 <template>
   <div>
     <!-- pageSize: Number,  // 每页显示条目
       total: Number, // 总条目数
       sizeChange: Function, // pageSize 改变时会触发 -->
-    <h-pagination :pageSize="10" :total="1000" :sizeChange="sizeChange"/>
+    <h-pagination :pageSize="10" :total="1000" @change="sizeChange"/>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:33:07
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 17:50:48
+ * @LastEditTime: 2020-07-30 10:55:52
 --> 
 <template>
   <div style="margin: 50px;">
@@ -11,7 +11,6 @@
       label-width="130px"
       label-align="left"
       required="left"
-      hide-not-selected
       @change="handleChange"
       />
   </div>

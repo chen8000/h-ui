@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:21:15
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 18:13:31
+ * @LastEditTime: 2020-07-30 10:55:38
 --> 
 <template>
   <div class="h--pcc--link">
@@ -26,8 +26,8 @@
             </el-option>
           </el-select>
         </h-select>
-        <span  v-if="hideNotSelected && city" class="h--connect--symbol">{{connectSymbol}}</span>
-        <h-select :height="height" v-if="hideNotSelected && city">
+        <span  v-if="hideNotSelected ? city : true" class="h--connect--symbol">{{connectSymbol}}</span>
+        <h-select :height="height" v-if="hideNotSelected ? city: true">
           <el-select 
             @change="handleCityVal"
             v-model="cityVal">
@@ -40,8 +40,8 @@
             </el-option>
           </el-select>
         </h-select>
-        <span v-if="hideNotSelected && county" class="h--connect--symbol">{{connectSymbol}}</span>
-        <h-select :height="height" v-if="hideNotSelected && county">
+        <span v-if="hideNotSelected ? county : true" class="h--connect--symbol">{{connectSymbol}}</span>
+        <h-select :height="height" v-if="hideNotSelected ? county : true">
           <el-select 
             @change="handleCountyVal"
             v-model="countyVal">

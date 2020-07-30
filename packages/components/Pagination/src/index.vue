@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 16:06:44
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-15 15:58:10
+ * @LastEditTime: 2020-07-30 11:21:22
 --> 
 <template>
   <div :class="['h--pagin', {'h--pagin--right':right}]">
@@ -24,7 +24,7 @@
         :class="['home-page', {'page-disable': currentPage === 1}]"
         >首页</span>
     </el-pagination>
-    <span 
+    <span
       @click="handleLastPage" 
       v-if="total > pageSize"
       :class="['last-page', {'page-disable': currentPage === cPagins}]"
@@ -46,8 +46,6 @@
         type: Number,
         default: 100
       },
-      // pageSize 改变时会触发
-      sizeChange: Function,
       // 靠右
       right: {
         type: Boolean,
@@ -67,7 +65,7 @@
     },
     watch: {
       currentPage () {
-        this.sizeChange(this.currentPage)
+        this.$emit('change', this.currentPage)
       },
       // 限制 + - easdasd 不准输入
       toPages (newVal) {
