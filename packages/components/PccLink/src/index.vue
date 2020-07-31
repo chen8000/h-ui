@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:21:15
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-31 12:04:29
+ * @LastEditTime: 2020-07-31 17:21:03
 --> 
 <template>
   <div class="h--pcc--link">
@@ -26,8 +26,8 @@
             </el-option>
           </el-select>
         </h-select>
-        <span  v-if="hideNotSelected ? city : true" class="h--connect--symbol">{{connectSymbol}}</span>
-        <h-select :height="height" v-if="hideNotSelected ? city: true">
+        <span  v-if="hideNotSelected ? renderCity : true" class="h--connect--symbol">{{connectSymbol}}</span>
+        <h-select :height="height" v-if="hideNotSelected ? renderCity : true">
           <el-select 
             @change="handleCityVal"
             v-model="cityVal">
@@ -40,8 +40,8 @@
             </el-option>
           </el-select>
         </h-select>
-        <span v-if="hideNotSelected ? county : true" class="h--connect--symbol">{{connectSymbol}}</span>
-        <h-select :height="height" v-if="hideNotSelected ? county : true">
+        <span v-if="hideNotSelected ? renderCounty : true" class="h--connect--symbol">{{connectSymbol}}</span>
+        <h-select :height="height" v-if="hideNotSelected ? renderCounty : true">
           <el-select 
             @change="handleCountyVal"
             v-model="countyVal">
@@ -163,7 +163,6 @@
       this.renderProvince = this.province
     },
     methods: {
-
       handleProvinceVal(){
         this.changeVal.province = this.province.filter(res => res.id === this.provinceVal)[0]
       },
@@ -173,7 +172,6 @@
       handleCountyVal(){
         this.changeVal.county = this.county[this.cityVal].filter(res => res.id === this.countyVal)[0]
       }
-
     }
   }
 </script>

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:33:07
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-31 12:09:43
+ * @LastEditTime: 2020-07-31 16:23:09
 --> 
 <template>
   <div style="margin: 50px;">
@@ -15,6 +15,7 @@
       :city="city"
       :county="county"
       :province="province"
+      hide-not-selected
     />
   </div>
 </template>
