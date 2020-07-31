@@ -2,7 +2,7 @@
 <!--
  * @Date: 2020-07-01 11:32:59
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-30 11:17:31
+ * @LastEditTime: 2020-07-31 10:57:14
 --> 
 
 
@@ -10,7 +10,7 @@
   <div id="app">
     <!-- <Button/> -->
     <!-- <Table/> -->
-    <Pagination/>
+    <!-- <Pagination/> -->
     <!-- <Audio/> -->
     <!-- <Input/> -->
     <!-- <FormInput /> -->
@@ -20,17 +20,18 @@
 <script>
 // import Button from './components/button'
 // import Table from './components/table'
-import Pagination from './components/pagination'
+// import Pagination from './components/pagination'
 // import Audio from './components/audio'
 // import Input from './components/input'
 // import FormInput from './components/formInput'
 import PccLink from './components/pccLink'
+
 export default {
   name: 'App',
   components: {
     // Button,
     // Table,
-    Pagination,
+    // Pagination,
     // Audio,
     // Input,
     // FormInput,

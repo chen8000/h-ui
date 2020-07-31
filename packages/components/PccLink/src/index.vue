@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:21:15
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-30 10:55:38
+ * @LastEditTime: 2020-07-31 12:04:29
 --> 
 <template>
   <div class="h--pcc--link">
@@ -19,7 +19,7 @@
             v-model="provinceVal">
             <el-option label="全部" value=""></el-option>
             <el-option
-              v-for="item in province"
+              v-for="item in renderProvince"
               :key="item.id"
               :label="item.name"
               :value="item.id">
@@ -33,7 +33,7 @@
             v-model="cityVal">
             <el-option label="全部" value=""></el-option>
             <el-option
-              v-for="item in city"
+              v-for="item in renderCity"
               :key="item.id"
               :label="item.name"
               :value="item.id">
@@ -47,7 +47,7 @@
             v-model="countyVal">
             <el-option label="全部" value=""></el-option>
             <el-option
-              v-for="item in county"
+              v-for="item in renderCounty"
               :key="item.id"
               :label="item.name"
               :value="item.id">
@@ -60,11 +60,27 @@
 </template>
 
 <script>
-// { province, city, county }
-  import { province, city, county } from '@/tools/pcc'
   export default {
     name: 'h-pcc-link',
     props: {
+      // 省
+      province: {
+        type: Array,
+        required: true
+      },
+      // 市
+      city: {
+        type: Object,
+        required: true,
+        // default: () => {}
+      },
+      // 区县
+      county: {
+        type: Object,
+        required: true,
+        // default: () => {}
+      },
+      // 连接符
       connectSymbol: {
         type: String,
         default: '-'
@@ -109,6 +125,9 @@
         cityVal: '',
         countyVal: '',
 
+        // 省
+        renderProvince: [],
+
         // 返回数据
         changeVal: {
           province: undefined,
@@ -118,12 +137,11 @@
       }
     },
     computed:{
-      province: () => province,
-      city(){
-        return city[this.provinceVal]
+      renderCity(){
+        return this.city[this.provinceVal]
       },
-      county(){
-        return county[this.cityVal]
+      renderCounty(){
+        return this.county[this.cityVal]
       },
     },
     watch: {
@@ -141,16 +159,19 @@
         deep: true
       }
     },
+    mounted(){
+      this.renderProvince = this.province
+    },
     methods: {
 
       handleProvinceVal(){
-        this.changeVal.province = province.filter(res => res.id === this.provinceVal)[0]
+        this.changeVal.province = this.province.filter(res => res.id === this.provinceVal)[0]
       },
       handleCityVal() {
-        this.changeVal.city = city[this.provinceVal].filter(res => res.id === this.cityVal)[0]
+        this.changeVal.city = this.city[this.provinceVal].filter(res => res.id === this.cityVal)[0]
       },
       handleCountyVal(){
-        this.changeVal.county = county[this.cityVal].filter(res => res.id === this.countyVal)[0]
+        this.changeVal.county = this.county[this.cityVal].filter(res => res.id === this.countyVal)[0]
       }
 
     }
