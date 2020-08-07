@@ -1,11 +1,16 @@
 {
   "name": "h-uiii",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
+  "repository": "https://github.com/chen8000/h-ui.git",
+  "homepage": "https://chen8000.github.io/huiii.github.io",
+  "author": "小辉哥哥",
   "main": "h-ui.common.js",
+  "keywords": [
+    "h-uiii"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC"
 }
