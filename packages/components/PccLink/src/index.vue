@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 15:21:15
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-31 17:21:03
+ * @LastEditTime: 2020-10-16 15:01:41
 --> 
 <template>
   <div class="h--pcc--link">
@@ -177,6 +177,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/theme';
+  @import '@p/assets/theme';
   @import './index.scss';
 </style>

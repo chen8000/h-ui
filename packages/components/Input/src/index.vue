@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 15:16:55
+ * @LastEditTime: 2020-10-16 15:01:32
 --> 
 <template>
   <div 
@@ -203,6 +203,6 @@
 </script>
 <style lang="scss" scoped>
   @import '../../../assets/fonts/iconfont.css';
-  @import '@/assets/theme';
+  @import '@p/assets/theme';
   @import './index.scss';
 </style>

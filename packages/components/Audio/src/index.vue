@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 16:07:34
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 18:48:56
+ * @LastEditTime: 2020-10-16 15:06:50
 -->
 <template>
   <!-- 自定义样式 -->
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  import { transTime } from '@/tools'
+  import { transTime } from '@p/tools'
   export default {
     name: 'h-audio',
     props: {
@@ -177,6 +177,6 @@
 
 <style lang="scss">
   @import '../../../assets/fonts/iconfont.css';
-  @import '@/assets/theme';
+  @import '@p/assets/theme';
   @import './index.scss';
 </style>

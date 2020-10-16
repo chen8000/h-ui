@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-07 14:36:13
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 14:11:53
+ * @LastEditTime: 2020-10-16 15:03:49
 --> 
 <template>
   <div 
@@ -73,7 +73,7 @@
 </script>
 
 <style lang="scss">
-  @import '@/assets/theme';
+  @import '@p/assets/theme';
   @import './index.scss';
   .h--table {
     margin: 15px;

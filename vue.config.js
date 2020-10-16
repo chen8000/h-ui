@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:42:19
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-02 11:00:17
+ * @LastEditTime: 2020-10-16 14:59:57
  */ 
 const path = require('path')
 const resolve = dir => path.join(__dirname, dir)
@@ -10,12 +10,12 @@ module.exports = {
   runtimeCompiler: true,
   chainWebpack: config => {
       config.resolve.alias
-          .set('@', resolve('packages'))
-          .set('#', resolve('test'))
+          .set('@p', resolve('packages'))
+          .set('@', resolve('src'))
   },
   pages: {
     index: {
-      entry: 'test/main.js',
+      entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html'
     }

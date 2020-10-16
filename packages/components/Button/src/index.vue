@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-28 14:32:41
+ * @LastEditTime: 2020-10-16 15:03:35
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -23,8 +23,8 @@
 </template>
 
 <script>
-  import { ripples } from '@/modules'
-  import { ripplesColor } from '@/assets/ripple.config'
+  import { ripples } from '@p/modules'
+  import { ripplesColor } from '@p/assets/ripple.config'
   export default {
     name: 'h-button',
     props: {
@@ -84,10 +84,10 @@
 </script>
 
 <style lang="scss">
-  @import '@/assets/theme/_common';
+  @import '@p/assets/theme/_common';
 </style>
 <style lang="scss" scoped>
-  @import '@/assets/theme';
+  @import '@p/assets/theme';
   @import './_mixin.scss';
   @import './index.scss';
 </style>

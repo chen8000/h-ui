@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 16:32:05
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 17:54:22
+ * @LastEditTime: 2020-10-16 15:01:49
 --> 
 <template>
   <div class="h--select" :style="{'height': height}">
@@ -24,7 +24,7 @@
   }
 </script>
 <style lang="scss">
-@import '@/assets/theme';
+@import '@p/assets/theme';
 body[h-select="style"] .el-select-dropdown__item.selected {
     color: $c-primary;
 }
@@ -34,6 +34,6 @@ body[h-select="style"] .el-select-dropdown__item:hover{
 }
 </style>
 <style lang="scss" scoped>
-@import '@/assets/theme';
+@import '@p/assets/theme';
 @import './index.scss';
 </style>

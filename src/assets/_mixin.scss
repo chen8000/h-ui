@@ -1,0 +1,37 @@
+
+/**
+ * @name: headShadow
+ * @msg: head阴影
+ */
+@mixin headShadow {
+  box-shadow: 0 10px 60px 0 rgba(29,29,31,0.07);
+}
+
+/**
+ * @name: contentShadow
+ * @msg: body阴影
+ */
+@mixin contentShadow {
+  box-shadow: 0 4px 30px 0 rgba(223,225,230,0.5);
+}
+
+/**
+ * @name: Shadow
+ * @msg: bar
+ */
+ @mixin barShadow {
+  box-shadow: 1px 0 12px 0 #6190E8;
+ }
+
+/**
+ * @name: 
+ * @msg: 
+ */ 
+ @mixin paramsTitle {
+  font-size: $title-size;
+  color: $title-color;
+  border-bottom: 2px solid $border;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+ }
+

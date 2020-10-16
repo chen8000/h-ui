@@ -53,6 +53,6 @@
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/theme';
+@import '@p/assets/theme';
 @import './index.scss';
 </style>

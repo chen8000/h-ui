@@ -1,9 +1,9 @@
 /*
  * @Date: 2020-07-02 15:16:53
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-07 14:16:12
+ * @LastEditTime: 2020-10-16 15:00:48
  */ 
-import { getCoordinate, addClass } from '@/tools'
+import { getCoordinate, addClass } from '@p/tools'
 /**
  * @name: ripples
  * @msg: 点击涟漪效果
