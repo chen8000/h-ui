@@ -7,7 +7,7 @@
   ├── src                   # UI文档-开发
 ```
 ## dist
-[https://chen8000.github.io/h-ui/#/button]
+https://chen8000.github.io/h-ui/#/button
 ```
 npm run build
 发布到线上的开发文档(自动更新)
