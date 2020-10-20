@@ -6,16 +6,17 @@
   ├── packages              # UI组件
   ├── src                   # UI文档-开发
 ```
-### docs 
-##### [文档地址] https://chen8000.github.io/h-ui/#/button
+## docs 
+##### 文档地址: https://chen8000.github.io/h-ui/
 
 ```
 npm run build
 ```
 
 ## lib
+##### NPM: https://www.npmjs.com/package/h-uiii
+
 ```
 npm run lib
-发布到npm上的包
 ```
 
