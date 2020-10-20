@@ -6,9 +6,9 @@
   ├── packages              # UI组件
   ├── src                   # UI文档-开发
 ```
-## docs 发布到线上的开发文档(自动更新)
-### 文档地址
-https://chen8000.github.io/h-ui/#/button
+### docs 
+##### [文档地址] https://chen8000.github.io/h-ui/#/button
+
 ```
 npm run build
 ```
