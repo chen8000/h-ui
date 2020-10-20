@@ -21,10 +21,10 @@ npm run lib
 ```
 
 ## 发布npm
+* cd lib
 * npm init
 *  "name": "h-uiii"
 *  "version": "1.0.5"
-* cd lib
 * npm config set registry https://registry.npmjs.org
 * npm login
 * npm publish

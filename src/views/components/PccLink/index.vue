@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-30 10:40:57
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-31 16:21:55
+ * @LastEditTime: 2020-10-20 17:21:58
 --> 
 <template>
   <div>
@@ -103,7 +103,7 @@
 </template>
 
 <script>
-  import { province, city, county } from '@/tools'
+  import { province, city, county } from '@t'
   export default {
     computed: {
       province: () => province,

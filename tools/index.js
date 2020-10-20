@@ -1,20 +1,20 @@
 /*
- * @Date: 2020-07-02 10:24:25
+ * @Date: 2020-07-29 15:45:09
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 16:00:11
- */
+ * @LastEditTime: 2020-10-20 17:20:09
+ */ 
 
-// import { province } from './pcc/province'
-// import { city } from './pcc/city'
-// import { county } from './pcc/county'
+import { province } from './province'
+import { city } from './city'
+import { county } from './county'
 
-// // 省市区
-// export const pcc = {
-//   province,
-//   city,
-//   county
-// }
- 
+export {
+  province,
+  city,
+  county
+}
+
+
 /**
  * @name: coordinate
  * @msg: 获取元素left top 间距， 元素内鼠标的xy点

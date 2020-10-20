@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-08 16:07:34
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 15:06:50
+ * @LastEditTime: 2020-10-20 17:21:30
 -->
 <template>
   <!-- 自定义样式 -->
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  import { transTime } from '@p/tools'
+  import { transTime } from '@t'
   export default {
     name: 'h-audio',
     props: {

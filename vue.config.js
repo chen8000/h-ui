@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:42:19
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-20 16:20:56
+ * @LastEditTime: 2020-10-20 17:20:53
  */ 
 const path = require('path')
 const resolve = dir => path.join(__dirname, dir)
@@ -13,6 +13,7 @@ module.exports = {
   chainWebpack: config => {
       config.resolve.alias
           .set('@p', resolve('packages'))
+          .set('@t', resolve('tools'))
           .set('@', resolve('src'))
   },
   pages: {
