@@ -10,7 +10,7 @@
 ```
 npm run build
 发布到线上的开发文档(自动更新)
-(https://chen8000.github.io/h-ui/#/button)
+[https://chen8000.github.io/h-ui/#/button]
 ```
 ## lib
 ```
