@@ -1,10 +1,10 @@
 # H-UI
 ### 项目结构
 ```
-  ├── dist       # UI文档-生产
-  ├── lib        # npm包
-  ├── packages   # UI组件
-  ├── src        # UI文档-开发
+  ├── ../huiii.github.io    # UI文档-生产
+  ├── ../hui-npm/lib        # npm包
+  ├── packages              # UI组件
+  ├── src                   # UI文档-开发
 ```
 ## dist
 ```
