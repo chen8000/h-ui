@@ -2,12 +2,15 @@
   "name": "h-uiii",
   "version": "1.0.8",
   "description": "",
+  "homepage": "https://chen8000.github.io/h-ui",
+  "author": "小辉哥哥",
   "main": "h-ui.common.js",
+  "keywords": [
+    "h-uiii",
+    "文档地址：https://chen8000.github.io/h-ui"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["文档地址：https://chen8000.github.io/h-ui"],
-  "homepage": "https://chen8000.github.io/h-ui",
-  "author": "",
   "license": "ISC"
 }
