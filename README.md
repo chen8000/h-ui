@@ -1,24 +1,19 @@
-# ypl-ui
-
-## Project setup
+# H-UI
+### 项目结构
 ```
-npm install
+  ├── dist       # UI文档-生产
+  ├── lib        # npm包
+  ├── packages   # UI组件
+  ├── src        # UI文档-开发
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+## dist
 ```
 npm run build
+发布到线上的开发文档
+```
+## lib
+```
+npm run lib
+发布到npm上的包
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
