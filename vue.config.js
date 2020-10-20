@@ -2,12 +2,12 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:42:19
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-20 15:40:40
+ * @LastEditTime: 2020-10-20 15:57:37
  */ 
 const path = require('path')
 const resolve = dir => path.join(__dirname, dir)
 module.exports = {
-  outputDir: '../huiii.github.io', // 编译后静态目录的位置
+  outputDir: '../hui-doc/docs', // 编译后静态目录的位置
   runtimeCompiler: true,
   chainWebpack: config => {
       config.resolve.alias
