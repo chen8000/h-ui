@@ -1,8 +1,8 @@
 # H-UI
 ### 项目结构
 ```
-  ├── ../hui-doc/docs    # UI文档-生产
-  ├── ../hui-npm/lib        # npm包
+  ├── docs    # UI文档-生产
+  ├── lib        # npm包
   ├── packages              # UI组件
   ├── src                   # UI文档-开发
 ```
