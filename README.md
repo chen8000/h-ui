@@ -20,3 +20,9 @@ npm run build
 npm run lib
 ```
 
+## 发布npm
+* cd lib
+* npm config set registry https://registry.npmjs.org
+* npm login
+* npm publish
+
