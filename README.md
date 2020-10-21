@@ -6,6 +6,14 @@
   ├── packages  # UI组件
   ├── src       # UI文档-开发
 ```
+
+### 安装及注册使用
+```
+npm install h-uiii
+import HUI from 'h-uiii'
+import 'h-uiii/h-ui.css'
+Vue.use(HUI)
+```
 ## docs 
 ##### 文档地址: https://chen8000.github.io/h-ui/
 
