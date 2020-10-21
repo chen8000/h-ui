@@ -1,8 +1,8 @@
 {
   "name": "h-uiii",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
-  "homepage": "https://chen8000.github.io/h-ui",
+  "homepage": "https://github.com/chen8000/h-ui",
   "author": "小辉哥哥",
   "main": "h-ui.common.js",
   "keywords": [
