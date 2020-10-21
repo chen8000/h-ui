@@ -20,7 +20,7 @@ import 'h-uiii/h-ui.css'
 ```
 Vue.use(HUI)
 ```
-## docs 
+<!-- ## docs 
 ##### 文档地址: https://chen8000.github.io/h-ui/
 
 ```
@@ -41,5 +41,5 @@ npm run lib
 *  "version": "1.0.5"
 * npm config set registry https://registry.npmjs.org
 * npm login
-* npm publish
+* npm publish -->
 
