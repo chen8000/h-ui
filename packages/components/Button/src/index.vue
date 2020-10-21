@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 15:03:35
+ * @LastEditTime: 2020-10-21 11:51:27
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -64,10 +64,15 @@
       long: {
         type: Boolean,
         default: false
+      },
+      // 是否隐藏按钮点击涟漪效果
+      hideRipples: {
+        type: Boolean,
+        default: false
       }
     },
     mounted(){
-      this.$nextTick(this.handleRipples)
+      !this.hideRipples && this.$nextTick(this.handleRipples)
     },
     methods: {
       handleRipples () {

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-05 15:00:10
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-08 16:16:57
+ * @LastEditTime: 2020-10-21 12:02:14
 --> 
 <template>
   <div class="button">
@@ -205,6 +205,13 @@
           {
             params: 'hollow',
             doc: '空心按钮',
+            type: 'Boolean',
+            options: 'true / false',
+            default: 'false'
+          },
+          {
+            params: 'hide-ripples',
+            doc: '隐藏点击涟漪效果',
             type: 'Boolean',
             options: 'true / false',
             default: 'false'

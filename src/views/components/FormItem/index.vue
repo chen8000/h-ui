@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 18:43:23
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-07-29 18:57:10
+ * @LastEditTime: 2020-10-21 14:41:30
 --> 
 <template>
   <div>
@@ -28,19 +28,19 @@
           <code class="html">
             &lt;h-form-item label="姓名：" layout="top"&gt;
               &lt;h-input/&gt;
-            &lt;/h-button&gt;
+            &lt;/h-form-item&gt;
             &lt;h-form-item label="姓名：" layout="left"&gt;
               &lt;h-input/&gt;
-            &lt;/h-button&gt;
+            &lt;/h-form-item&gt;
             &lt;h-form-item label="姓名：" layout="bottom"&gt;
               &lt;h-input/&gt;
-            &lt;/h-button&gt;
+            &lt;/h-form-item&gt;
             &lt;h-form-item label="姓名：" layout="top" required="left"&gt;
               &lt;h-input/&gt;
-            &lt;/h-button&gt;
+            &lt;/h-form-item&gt;
             &lt;h-form-item label="姓名：" layout="top" required="right"&gt;
               &lt;h-input/&gt;
-            &lt;/h-button&gt;
+            &lt;/h-form-item&gt;
           </code>
         </pre>
       </div>
