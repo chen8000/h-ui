@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-29 16:32:05
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 15:01:49
+ * @LastEditTime: 2020-10-21 14:53:24
 --> 
 <template>
   <div class="h--select" :style="{'height': height}">
@@ -19,17 +19,17 @@
       }
     },
     mounted(){
-      document.getElementsByTagName('body')[0].setAttribute('h-select', 'style')
+      // document.getElementsByTagName('body')[0].setAttribute('h-select', 'style')
     }
   }
 </script>
 <style lang="scss">
 @import '@p/assets/theme';
-body[h-select="style"] .el-select-dropdown__item.selected {
+.h--select .el-select-dropdown__item.selected {
     color: $c-primary;
 }
-body[h-select="style"] .el-select-dropdown__item.hover, 
-body[h-select="style"] .el-select-dropdown__item:hover{
+.h--select .el-select-dropdown__item.hover, 
+.h--select .el-select-dropdown__item:hover{
   background-color: rgba($c-primary, .05);
 }
 </style>

@@ -2,7 +2,7 @@
  * @Author: chenzhanghui
  * @Date: 2020-07-01 14:41:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-21 11:51:27
+ * @LastEditTime: 2020-10-21 16:25:13
 --> 
 <template>
   <button :disabled="disabled" ref="hButton" :class="[
@@ -14,7 +14,7 @@
     `${small ? 'h--button--small' : ''}`,
     `${mini ? 'h--button--mini' : ''}`,
     `${long ? 'h--button--long' : ''}`
-  ]">
+  ]" @click="$emit('click')">
     <span>
       <i v-if="icon" :class="['h--button--icon', icon]"></i>
       <slot></slot>
