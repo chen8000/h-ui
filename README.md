@@ -10,8 +10,14 @@
 ### 安装及注册使用
 ```
 npm install h-uiii
+```
+```
 import HUI from 'h-uiii'
+```
+```
 import 'h-uiii/h-ui.css'
+```
+```
 Vue.use(HUI)
 ```
 ## docs 
