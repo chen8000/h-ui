@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-15 16:03:55
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 15:01:32
+ * @LastEditTime: 2020-10-28 15:24:51
 --> 
 <template>
   <div 
@@ -153,6 +153,11 @@
         inputVal: '',
         showPwd: false,
         iconOpacity: '0'
+      }
+    },
+    watch: {
+      value(newVal) {
+        this.$refs.input.value = newVal
       }
     },
     computed: {
