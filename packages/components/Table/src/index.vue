@@ -1,7 +1,7 @@
 <!--
  * @Date: 2020-07-07 14:36:13
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 15:03:49
+ * @LastEditTime: 2020-11-02 11:24:05
 --> 
 <template>
   <div 
@@ -79,7 +79,7 @@
     margin: 15px;
     // padding: 10px;
     position: relative;
-    .el-table {
+    &>div>.el-table {
       position: absolute;
     }
   }

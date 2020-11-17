@@ -1,14 +1,22 @@
 <!--
  * @Date: 2020-07-07 17:35:11
  * @LastEditors: chenzhanghui
- * @LastEditTime: 2020-10-16 14:57:51
+ * @LastEditTime: 2020-11-02 11:22:10
 --> 
 <template>
   <div class="h-doc-table">
     <page-layout pageTitle="Table 表格" docTitle="带背景的table">
       <h-table slot="component" is-bg ypl-table :data-length="4" :tr-height="50">
         <el-table :data="tableData">
-            <el-table-column prop="date" label="日期"></el-table-column>
+            <el-table-column type="expand" prop="date" label="日期">
+              <template>
+                <div style="height: 100px;">
+                  <el-table :data="tableData">
+                    <el-table-column prop="date" label="开始抓取时间" show-overflow-tooltip></el-table-column>
+                  </el-table>
+                </div>
+              </template>
+            </el-table-column>
             <el-table-column prop="name" label="姓名"></el-table-column>
             <el-table-column prop="address" label="地址"></el-table-column>
         </el-table>
